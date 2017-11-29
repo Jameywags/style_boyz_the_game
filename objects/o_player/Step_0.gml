@@ -22,9 +22,10 @@ key_two = keyboard_check_pressed(ord("2"));						//Will check if we press "2"
 key_three = keyboard_check_pressed(ord("3"));					//Will check if we press "3"
 key_attack = keyboard_check_pressed(ord("Z"));
 
+
 //Caculate movement
 var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
-var dir = move == 0 ? 0 : 180*(move - 1)/2;
+var dir = 180*(dir_looking - 1)/2;
 
 //Firing bullets
 firing_delay -= 1
@@ -95,7 +96,8 @@ switch(move)
 	{
 		if(move == -sign(hsp))
 		{
-			hsp -= curr_decel *2
+			dir_looking = -1*dir_looking;
+			hsp -= curr_decel *2;
 		}
 		else
 		{
@@ -118,7 +120,8 @@ switch(move)
 	{
 		if(move == -sign(hsp))
 		{
-			hsp += curr_decel * 2
+			dir_looking = -1*dir_looking;
+			hsp += curr_decel * 2;
 		}
 		else
 		{
@@ -127,7 +130,7 @@ switch(move)
 		break;
 	}
 }
-
+dir_looking = sign(hsp) == 0 ? dir_looking : sign(hsp)
 
 
 //Variable jump speed	

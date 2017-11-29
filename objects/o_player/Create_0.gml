@@ -22,3 +22,4 @@ wall_jump = 0;		//Initial value
 boy = 1				//Initial value
 sprite = 1			//Initial value
 firing_delay = 0;	//Initial value
+dir_looking = 1;	// The direction we are looking
