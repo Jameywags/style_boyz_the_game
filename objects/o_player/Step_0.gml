@@ -9,11 +9,15 @@ key_jump = keyboard_check_pressed(vk_space);					//Will check if we press
 key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
 key_attack = keyboard_check_pressed(ord("Z"));					//Will tell if we press attack
 key_down = keyboard_check_pressed(vk_down);						//Stop hsp when down key is pressed. *Dumb fix for slow walking bug
+key_up = keyboard_check_pressed(vk_up);						//Stop hsp when down key is pressed. *Dumb fix for slow walking bug
 key_one = keyboard_check_pressed(ord("1"));						//Will check if we press "1"
 key_two = keyboard_check_pressed(ord("2"));						//Will check if we press "2"
 key_three = keyboard_check_pressed(ord("3"));					//Will check if we press "3"
 key_attack = keyboard_check_pressed(ord("Z"));
 
+//Caculate movement
+var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
+var dir = move == 0 ? 0 : 180*(move - 1)/2;
 
 //Firing bullets
 firing_delay -= 1
@@ -22,7 +26,7 @@ if (key_attack) && (firing_delay < 0)
 	firing_delay = 10;
 	with (instance_create_layer(x+10,y,"Bullets",o_bullet))
 	{
-		direction = 0;
+		direction = dir;
 		image_xscale = 1;
 		speed = 5;
 	}
@@ -64,8 +68,6 @@ if (sprite = 3)													//If sprite set 3 is chosen (Himat)
 	sprite_run = s_himat_R;										//Set the running sprite to Himat's running sprite
 	sprite_air = s_himat_A;										//Set the Airborn sprite to Himat's airborn sprite
 }
-//Caculate movement
-var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
 
 if (key_down)													//If down key is pressed. *Dumb fix for slow walking bug
 {
