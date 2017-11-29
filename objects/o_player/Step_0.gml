@@ -218,7 +218,7 @@ if (extra_jump)													//If extra jump variable is on
 {
 	jumps_max = 2;												//Set max jump number
 }
-if !(extra_jump)												//If extra jump variable is off
+else															//If extra jump variable is off
 {
 	jumps_max = 1;												//Set max jump number
 }
