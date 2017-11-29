@@ -1,5 +1,12 @@
 //===== similar code for all 3 ================================
 
+/*
+ *	Constants
+ */
+LUKE_ID = 2;
+JAMEY_ID = 1;
+HIMAT_ID = 3;
+
 //Get player input
 key_left = keyboard_check(vk_left);								//Will tell us if we push left arrow key. Virtual keyboard
 key_right = keyboard_check(vk_right);							//Will tell us if we push right arrow key. Virtual keyboard
@@ -37,116 +44,91 @@ if (key_attack) && (firing_delay < 0)
 //Changing between boys
 if (key_one)													//If key one is pressed
 {
-	boy = 1;														//Set boy to 1
+	boy = JAMEY_ID;												//Set boy to 1
 }
 if (key_two)													//If key two is pressed
 {
-	boy = 2;													//Set boy to 2
+	boy = LUKE_ID;												//Set boy to 2
 }
 if (key_three)													//If key three is pressed
 {
-	boy = 3;													//Set boy to 3
+	boy = HIMAT_ID;												//Set boy to 3
 }
 
 //Sprites
-if (sprite = 1)													//If sprite set 1 is chosen (Jamey)
+if (sprite == JAMEY_ID)												//If sprite set 1 is chosen (Jamey)
 {
 	sprite_stand = s_jamey;										//Set the standing sprite to Jamey's standing sprite
 	sprite_run = s_jamey_R;										//Set the running sprite to Jamey's running sprite
 	sprite_air = s_jamey_A;										//Set the Airborn sprite to Jamey's airborn sprite
 }
 
-if (sprite = 2)													//If sprite set 2 is chosen (Luke)
+if (sprite == LUKE_ID)													//If sprite set 2 is chosen (Luke)
 {
 	sprite_stand = s_luke;										//Set the standing sprite to Luke's standing sprite
 	sprite_run = s_luke_R;										//Set the running sprite to Luke's running sprite
 	sprite_air = s_luke_A;										//Set the Airborn sprite to Luke's airborn sprite
 }
-if (sprite = 3)													//If sprite set 3 is chosen (Himat)
+if (sprite == HIMAT_ID)													//If sprite set 3 is chosen (Himat)
 {
 	sprite_stand = s_himat;										//Set the standing sprite to Himat's standing sprite
 	sprite_run = s_himat_R;										//Set the running sprite to Himat's running sprite
 	sprite_air = s_himat_A;										//Set the Airborn sprite to Himat's airborn sprite
 }
 
-if (key_down)													//If down key is pressed. *Dumb fix for slow walking bug
-{
-	hsp = 0;													//Set hsp to 0. *Dumb fix for slow walking bug
-}
 
 
 //Horizontal acceleration coast
-if (hsp < max_hsp) && (hsp > -max_hsp)							//If hsp is less then the max hsp
+
+// Set a variable for deceleration based on in air or on ground
+curr_decel = hsp_decel
+if(!(place_meeting(x,y+1,o_wall)))
 {
-    hsp += move * move_speed;									//hsp equals itself plus move speed every frame. Accelerating
+	curr_decel /= 3;
 }
-else if (hsp = max_hsp)											//If hsp equals max right
+
+// Switch will separate between left (-1), right (1) and no motion (0).
+switch(move)
 {
-    if (key_right)												//If right is held
-    {
-        hsp = max_hsp;											//Continue moving at max speed
-    }
-}
-else if (hsp = -max_hsp)										//If hsp equals max left
-{
-    if (key_left)												//If left is held
-    {
-        hsp = -max_hsp;											//Continue moving at max speed
-    }
-}
-//Horizontal acceleration with force opposite direction
-if (hsp > 0) && (place_meeting(x,y+1,o_wall))					//If hsp is greater then zero, moving right, and on the ground
-{
-	if (move == 0)												//If no direction is pushed
+	// Moving to the left
+	case -1:
 	{
-		hsp -= hsp_decel;										//decelerate at hsp_decel
+		if(move == -sign(hsp))
+		{
+			hsp -= curr_decel *2
+		}
+		else
+		{
+			hsp = max(hsp - move_speed, -max_hsp);
+		}
+		break;
 	}
-	if (move == -1)												//If left direction is pushed
+	// No move; Slow down
+	case 0:
 	{
-		hsp -= (hsp_decel * 2);									//decelerate at hsp_decel x multiplier
+		hsp -= curr_decel*sign(hsp);
+		if(abs(hsp) < move_speed)
+		{
+			hsp = 0;
+		}
+		break;
+	}
+	// Moving to the right
+	case 1:
+	{
+		if(move == -sign(hsp))
+		{
+			hsp += curr_decel * 2
+		}
+		else
+		{
+			hsp = min(hsp + move_speed, max_hsp);
+		}
+		break;
 	}
 }
 
-if (hsp < 0) && (place_meeting(x,y+1,o_wall))					//If hsp is less then zero, moving left, and on the ground
-{
-	if (move == 0)												//If no direction is pushed
-	{
-		hsp += hsp_decel;										//decelerate at hsp_decel
-	}
-	if (move == 1)												//If right direction is pushed
-	{
-		hsp += (hsp_decel * 2);									//decelerate at hsp_decel x multiplier
-	}
-}
-//Horizontal acceleration in air
-if (hsp > 0) && !(place_meeting(x,y+1,o_wall))					//If hsp is greater then zero, moving right, and on the ground
-{
-	if (move == 0)												//If no direction is pushed
-	{
-		hsp -= hsp_decel / 3;									//decelerate at hsp_decel
-	}
-	if (move == -1)												//If left direction is pushed
-	{
-		hsp -= (hsp_decel/2);									//decelerate at hsp_decel x multiplier
-	}
-}
 
-if (hsp < 0) && !(place_meeting(x,y+1,o_wall))					//If hsp is less then zero, moving left, and on the ground
-{
-	if (move == 0)												//If no direction is pushed
-	{
-		hsp += hsp_decel / 3;									//decelerate at hsp_decel
-	}
-	if (move == 1)												//If right direction is pushed
-	{
-		hsp += (hsp_decel/2);									//decelerate at hsp_decel x multiplier
-	}
-}
-//slowing down if going faster then max
-if (abs(hsp) > max_hsp)											//if the absolute value of hsp is greater then max hsp
-{
-	hsp -= hsp_decel*sign(hsp);									//Deccelerate in oposite direction of hsp
-}
 
 //Variable jump speed	
 if (vsp < 0) && (!key_jump_held) vsp = max(vsp, -jump_speed*0.4)	//If you are going up and the jump key is not pressed, change to lower upward speed
@@ -264,7 +246,7 @@ if (wall_jump)																	//Variable to give wall jump ability
 
 //===== Code for each boy to assign variables =======================
 
-if (boy == 1)													//If boy one is chosen (Jamey)
+if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 {
 	extra_jump = 1;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
@@ -272,7 +254,7 @@ if (boy == 1)													//If boy one is chosen (Jamey)
 	o_bullet.bullet_range = 150;
 }
 
-if (boy == 2)													//If boy two is chosen (Luke)
+if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 {
 	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 1;												//wall jump variable. 1=yes, 0 =no
@@ -280,7 +262,7 @@ if (boy == 2)													//If boy two is chosen (Luke)
 	o_bullet.bullet_range = 100;
 }
 
-if (boy == 3)													//If boy three is chosen (Himat)
+if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 {
 	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
