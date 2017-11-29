@@ -250,6 +250,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
 	sprite = 1;													//Changes sprite set to 1
 	o_bullet.bullet_range = 150;
+	o_bullet.atk_damage = 1;
 }
 
 if (boy == LUKE_ID)													//If boy two is chosen (Luke)
@@ -258,6 +259,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 	wall_jump = 1;												//wall jump variable. 1=yes, 0 =no
 	sprite = 2;													//Changes sprite set to 2
 	o_bullet.bullet_range = 100;
+	o_bullet.atk_damage = 2;
 }
 
 if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
@@ -266,4 +268,5 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
 	sprite = 3;													//Changes sprite set to 3
 	o_bullet.bullet_range = 50;
+	o_bullet.atk_damage = 4;
 }
