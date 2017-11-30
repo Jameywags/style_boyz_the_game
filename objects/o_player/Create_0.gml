@@ -1,4 +1,7 @@
 //Initial conditions
+hp = 3;				//Set initial hp to 3
+hit_delay = 0;		//dellay time for being hit again
+
 hsp = 0;			//Horizontal speed
 vsp = 0;			//Vertical speed
 
