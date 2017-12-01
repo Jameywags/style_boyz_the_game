@@ -15,8 +15,8 @@ key_right_presses = keyboard_check_pressed(vk_right);			//Will tell us if we pus
 key_jump = keyboard_check_pressed(vk_space);					//Will check if we press 
 key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
 key_attack = keyboard_check_pressed(ord("Z"));					//Will tell if we press attack
-key_down = keyboard_check_pressed(vk_down);						//Stop hsp when down key is pressed. *Dumb fix for slow walking bug
-key_up = keyboard_check_pressed(vk_up);						//Stop hsp when down key is pressed. *Dumb fix for slow walking bug
+key_down = keyboard_check_pressed(vk_down);						//Will tell if we down
+key_up = keyboard_check_pressed(vk_up);							//Will tell if we up
 key_one = keyboard_check_pressed(ord("1"));						//Will check if we press "1"
 key_two = keyboard_check_pressed(ord("2"));						//Will check if we press "2"
 key_three = keyboard_check_pressed(ord("3"));					//Will check if we press "3"
@@ -259,6 +259,18 @@ if (wall_jump)																	//Variable to give wall jump ability
     }
 }
 
+//ground pound
+if (ground_pound)
+{
+	if (!place_meeting(x,y+1,o_wall)) && (key_down)
+	{
+		if (!place_meeting(x,y+1,o_wall))
+		{
+			hsp = 0;
+			vsp = 10;
+		}
+	}
+}
 
 //===== Code for each boy to assign variables =======================
 
@@ -266,6 +278,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 {
 	extra_jump = 1;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
+	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 1;													//Changes sprite set to 1
 	o_bullet.bullet_range = 150;
 	o_bullet.atk_damage = 1;
@@ -275,6 +288,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 {
 	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 1;												//wall jump variable. 1=yes, 0 =no
+	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 2;													//Changes sprite set to 2
 	o_bullet.bullet_range = 100;
 	o_bullet.atk_damage = 2;
@@ -284,6 +298,7 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 {
 	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
+	ground_pound = 1;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 3;													//Changes sprite set to 3
 	o_bullet.bullet_range = 50;
 	o_bullet.atk_damage = 4;
