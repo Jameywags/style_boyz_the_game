@@ -2,7 +2,7 @@
     "id": "5bb4085a-bfd7-42e6-be06-0a02692aeb7a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_menu",
+    "name": "o_main_menu",
     "eventList": [
         {
             "id": "18455676-2527-40c1-afcf-a2db28ce387b",

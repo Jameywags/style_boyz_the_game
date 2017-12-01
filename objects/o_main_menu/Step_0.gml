@@ -12,4 +12,4 @@ if (move != 0)
 var push;
 push = keyboard_check_released(vk_enter);
 
-if (push == 1) scr_menu();
+if (push == 1) scr_main_menu();
