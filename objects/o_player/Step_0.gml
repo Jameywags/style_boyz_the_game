@@ -1,3 +1,5 @@
+if (global.pause) exit;
+
 //===== similar code for all 3 ================================
 
 /*
