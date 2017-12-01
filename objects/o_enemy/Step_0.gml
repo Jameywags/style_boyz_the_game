@@ -1,3 +1,5 @@
+if (global.pause) exit;
+
 sprite_stand = s_enemy;										//Set the standing sprite to enemy's standing sprite
 sprite_run = s_enemy_R;										//Set the running sprite to enemy's running sprite
 sprite_air = s_enemy_A;										//Set the Airborn sprite to enemy's airborn sprite
