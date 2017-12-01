@@ -1,4 +1,4 @@
-if (global.pause) exit;
+if (global.pause || global.game_over) exit;
 
 //===== similar code for all 3 ================================
 
@@ -79,12 +79,14 @@ if (sprite == HIMAT_ID)													//If sprite set 3 is chosen (Himat)
 	sprite_air = s_himat_A;										//Set the Airborn sprite to Himat's airborn sprite
 }
 
+		
+
 //hp stuff
 if (hp == 0)													//If hp = 0
 {
-	game_restart();												//Resart game
+	global.game_over = 1;
 }
-
+	
 if (hit_delay > 0)												//If delay is greater then 0
 {
 	hit_delay --;												//Subtract 1 from hit delay
