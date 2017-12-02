@@ -38,7 +38,7 @@ if (key_attack) && (firing_delay < 0)
 	{
 		direction = dir;
 		image_xscale = 1;
-		speed = 5;
+		speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
 	}
 }
 
