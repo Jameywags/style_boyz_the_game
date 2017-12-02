@@ -145,7 +145,11 @@ switch(move)
 		break;
 	}
 }
-dir_looking = sign(hsp) == 0 ? dir_looking : sign(hsp)
+
+if(move == 0)
+	dir_looking = sign(hsp) == 0 ? dir_looking : sign(hsp)
+else
+	dir_looking = sign(move);
 
 
 //Variable jump speed	
