@@ -7,6 +7,27 @@ sprite_dead = s_enemy_D;									//Set the dead sprite to enemy's dead sprite
 
 vsp = vsp + grv;
 
+if place_meeting (x, y-5, o_player)
+{
+	if (o_player.y < y-48) && (o_player.vsp > 0)
+	{
+		with (o_player) vsp = -jump_speed
+		hp --;
+	}
+	else
+	{
+		with (o_player)
+		{
+			if (hit_delay = 0)			//If hit delay is at 0
+			{
+				hp --;					//subtract 1 from hp
+				hit_delay = 50;		//Sets hit delay to 300
+				vsp = -5;				//Make the player jump up a little
+			}
+		}
+	}
+}
+
 //Horizontal collision
 if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
 {
