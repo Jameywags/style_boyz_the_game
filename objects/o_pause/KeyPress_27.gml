@@ -1,4 +1,4 @@
-if (global.pause == 0)
+if !(global.pause) && !(room == 0)
 {
 	global.pause = 1;
 }
