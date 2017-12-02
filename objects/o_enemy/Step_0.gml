@@ -7,10 +7,11 @@ sprite_dead = s_enemy_D;									//Set the dead sprite to enemy's dead sprite
 
 vsp = vsp + grv;
 
-hsp -= hsp_decel*sign(hsp - move_max);
-if(abs(hsp) < (move_max + move_speed) || abs(hsp) > (move_max - move_speed))
+
+hsp -= hsp_decel*sign(hsp - move_max*move_direction);
+if(hsp < (move_max*move_direction + move_speed) && hsp > (move_max*move_direction - move_speed))
 {
-	hsp = move_max;
+	hsp = move_max*move_direction;
 }
 
 
@@ -24,6 +25,7 @@ if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be
 		x = x + sign(hsp);										//Move one pixel in the direction we are moving
 	}
 	hsp = -hsp;													//Set hsp to 0
+	move_direction *= -1
 }
 
 x = x + hsp;													//Every frame you move right or left the amount walksp is.

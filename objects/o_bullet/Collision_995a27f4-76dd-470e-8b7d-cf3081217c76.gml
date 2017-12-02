@@ -8,7 +8,7 @@ with (other)							//In the collision event, other reference what the bullet col
 	
 	if (other.push_back = 1)
 		{
-			hsp = lengthdir_x(5,other.direction);
+			hsp = lengthdir_x(other.push_back_speed,other.direction);
 			vsp = -3
 		}
 
