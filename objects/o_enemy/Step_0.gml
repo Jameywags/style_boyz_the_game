@@ -7,6 +7,15 @@ sprite_dead = s_enemy_D;									//Set the dead sprite to enemy's dead sprite
 
 vsp = vsp + grv;
 
+hsp -= hsp_decel*sign(hsp - move_max);
+if(abs(hsp) < (move_max + move_speed) || abs(hsp) > (move_max - move_speed))
+{
+	hsp = move_max;
+}
+
+
+
+
 //Horizontal collision
 if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
 {
