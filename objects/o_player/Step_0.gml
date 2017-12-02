@@ -34,7 +34,7 @@ firing_delay -= 1
 if (key_attack) && (firing_delay < 0) 
 {
 	firing_delay = 10;
-	with (instance_create_layer(x+10,y,"Bullets",o_bullet))
+	with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet))
 	{
 		direction = dir;
 		image_xscale = 1;
