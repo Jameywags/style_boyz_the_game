@@ -34,11 +34,11 @@ firing_delay -= 1
 if (key_attack) && (firing_delay < 0) 
 {
 	firing_delay = 10;
-	with (instance_create_layer(x+10,y,"Bullets",o_bullet))
+	with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet))
 	{
 		direction = dir;
 		image_xscale = 1;
-		speed = 5;
+		speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
 	}
 }
 
@@ -145,7 +145,11 @@ switch(move)
 		break;
 	}
 }
-dir_looking = sign(hsp) == 0 ? dir_looking : sign(hsp)
+
+if(move == 0)
+	dir_looking = sign(hsp) == 0 ? dir_looking : sign(hsp)
+else
+	dir_looking = sign(move);
 
 
 //Variable jump speed	
