@@ -98,7 +98,7 @@ else
 
 // Set a variable for deceleration based on in air or on ground
 curr_decel = hsp_decel
-if(!(place_meeting(x,y+1,o_wall)))
+if(!(place_meeting(x,y+1,o_walls)))
 {
 	curr_decel /= 3;
 }
@@ -156,9 +156,9 @@ else
 if (vsp < 0) && (!key_jump_held) vsp = max(vsp, -jump_speed*0.4)	//If you are going up and the jump key is not pressed, change to lower upward speed
 
 //Horizontal collision
-if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+if (place_meeting(x+hsp,y,o_walls))			//Is there a colision where we will be next frame after one more hsp? If so do this?
 {
-	while (!place_meeting(x+sign(hsp),y,o_wall))				//If a collision is not detected in the direction of movement do this
+	while (!place_meeting(x+sign(hsp),y,o_walls))		//If a collision is not detected in the direction of movement do this
 	{
 		x = x + sign(hsp);										//Move one pixel in the direction we are moving
 	}
@@ -168,9 +168,9 @@ if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be
 x = x + hsp;													//Every frame you move right or left the amount walksp is.
 
 //Vertical collision
-if (place_meeting(x,y+vsp,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+if (place_meeting(x,y+vsp,o_walls))					//Is there a colision where we will be next frame after one more hsp? If so do this?
 {			
-	while (!place_meeting(x,y+sign(vsp),o_wall))				//If a collision is not detected in the direction of movement do this
+	while (!place_meeting(x,y+sign(vsp),o_walls))		//If a collision is not detected in the direction of movement do this
 	{
 		y = y + sign(vsp);										//Move one pixel in the direction we are moving
 	}
@@ -182,7 +182,7 @@ y = y + vsp;													//Every frame you move right or left the amount walksp 
 //Jumping
 if (vsp < max_vsp) vsp += grv;									//move by gravity
 
-if (place_meeting(x,y+1,o_wall))								//If wall is right below you 
+if (place_meeting(x,y+1,o_walls))								//If wall is right below you 
 {
 	jumps = jumps_max	;										//Reset number of jumps
 
@@ -195,7 +195,7 @@ if (key_jump) && (jumps > 0)									//If you press jump
 }
 
 //Animation
-if (!place_meeting(x,y+1,o_wall)) && !(key_attack)				//Check if we are not on the ground
+if (!place_meeting(x,y+1,o_walls)) && !(key_attack)				//Check if we are not on the ground
 {
 	sprite_index = sprite_air;									//Change sprite to airborn sprite
 	image_speed = 0;											//animation speed set. Multiply by speed in sprite.
@@ -233,9 +233,9 @@ else															//If extra jump variable is off
 //Wall Jumps
 if (wall_jump)																	//Variable to give wall jump ability
 {
-	if (place_meeting(x+1,y,o_wall)) && (!place_meeting(x-1,y,o_wall))			//If wall is right but not left
+	if (place_meeting(x+1,y,o_walls)) && (!place_meeting(x-1,y,o_walls))			//If wall is right but not left
 	{
-	    if (key_jump) && (!place_meeting(x,y+1,o_wall))// && (key_right)		//If press jump and not on ground
+	    if (key_jump) && (!place_meeting(x,y+1,o_walls))// && (key_right)		//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
 	        vsp -= wall_jump_vsp;												//Up speed
@@ -244,9 +244,9 @@ if (wall_jump)																	//Variable to give wall jump ability
 	}
 
 
-	if (place_meeting(x-1,y,o_wall)) && (!place_meeting(x+1,y,o_wall))			//If wall is left but not right
+	if (place_meeting(x-1,y,o_walls)) && (!place_meeting(x+1,y,o_walls))			//If wall is left but not right
 	{
-	    if (key_jump) && (!place_meeting(x,y+1,o_wall))// && (key_left)			//If press jump and not on ground
+	    if (key_jump) && (!place_meeting(x,y+1,o_walls))// && (key_left)			//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
 	        vsp -= wall_jump_vsp;												//Up speed
@@ -254,12 +254,12 @@ if (wall_jump)																	//Variable to give wall jump ability
 	    }
 	}
 //Wall Slides Left
-    if (key_left = 1) && (vsp > 0) && (place_meeting(x-1,y,o_wall)) && (!place_meeting(x,y+1,o_wall))	//If pushing left, moving down, wall left, and no wall below
+    if (key_left = 1) && (vsp > 0) && (place_meeting(x-1,y,o_walls)) && (!place_meeting(x,y+1,o_walls))	//If pushing left, moving down, wall left, and no wall below
     {
 		vsp = wall_slide_vsp;																			//Set vsp to wall slide vsp
     }
 //Wall Slides Right
-    if (key_right = 1) && (vsp > 0) && (place_meeting(x+1,y,o_wall)) && (!place_meeting(x,y+1,o_wall))	//If pushing right, moving down, wall right, and no wall below
+    if (key_right = 1) && (vsp > 0) && (place_meeting(x+1,y,o_walls)) && (!place_meeting(x,y+1,o_walls))	//If pushing right, moving down, wall right, and no wall below
     {
         vsp = wall_slide_vsp;																			//Set vsp to wall slide vsp
     }
@@ -268,9 +268,9 @@ if (wall_jump)																	//Variable to give wall jump ability
 //ground pound
 if (ground_pound)
 {
-	if (!place_meeting(x,y+1,o_wall)) && (key_down)
+	if (!place_meeting(x,y+1,o_walls)) && (key_down)
 	{
-		if (!place_meeting(x,y+1,o_wall))
+		if (!place_meeting(x,y+1,o_walls))
 		{
 			hsp = 0;
 			vsp = 10;
@@ -288,6 +288,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 	sprite = 1;													//Changes sprite set to 1
 	o_bullet.bullet_range = 150;
 	o_bullet.atk_damage = 1;
+	o_bullet.wall_break = 0;
 }
 
 if (boy == LUKE_ID)													//If boy two is chosen (Luke)
@@ -298,6 +299,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 	sprite = 2;													//Changes sprite set to 2
 	o_bullet.bullet_range = 100;
 	o_bullet.atk_damage = 2;
+	o_bullet.wall_break = 0;
 }
 
 if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
@@ -308,4 +310,5 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 	sprite = 3;													//Changes sprite set to 3
 	o_bullet.bullet_range = 50;
 	o_bullet.atk_damage = 4;
+	o_bullet.wall_break = 1;
 }

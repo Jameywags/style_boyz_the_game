@@ -66,7 +66,7 @@
             "Key": "12637e7f-7e6b-495e-8f45-332ae4428e6d",
             "Value": {
                 "id": "f4b5e1ee-d7c5-4b1a-8d44-18a1835e568a",
-                "resourcePath": "objects\\o_wall\\o_wall.yy",
+                "resourcePath": "objects\\o_wall_normal\\o_wall_normal.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -108,14 +108,6 @@
                 "id": "7fd23ba8-263d-44fa-b12b-4b8ecb0144be",
                 "resourcePath": "rooms\\main_menu\\main_menu.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "233de4dc-49ec-4956-8f71-86e1907160ff",
-            "Value": {
-                "id": "f2fda68a-a6b0-489d-9e4d-5ff93ee3af2e",
-                "resourcePath": "sprites\\o_hitbox\\o_hitbox.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -164,6 +156,14 @@
                 "id": "e7dfc2ac-d5fb-477d-abb9-45f885f57662",
                 "resourcePath": "views\\2aa37d13-e0dd-4cc4-b9ac-de6efb12fc0b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2d373178-c583-49c1-aaa5-adfcd1228cb2",
+            "Value": {
+                "id": "67597b48-0dce-46f0-aebe-7c3c0fe47d64",
+                "resourcePath": "objects\\o_wall_break\\o_wall_break.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -460,6 +460,22 @@
                 "id": "f84ba0b2-5603-40a3-bd7d-24c6582ba964",
                 "resourcePath": "views\\e5e35c28-a995-425a-b445-99b57960d1a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8cc1f3d-db0e-467c-8e06-c6cad2ceaf4f",
+            "Value": {
+                "id": "b63931d5-e081-4b31-aac2-d3363ef00535",
+                "resourcePath": "objects\\o_walls\\o_walls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f245899d-03f8-4361-81ac-c50dc2145ede",
+            "Value": {
+                "id": "f691ad62-73b5-4d75-8959-9bd693bd5f66",
+                "resourcePath": "sprites\\s_wall_break\\s_wall_break.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
