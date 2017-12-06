@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "9ff29bd3-4d31-4223-8da8-b2d46c6b9bd3",
+            "Value": {
+                "id": "8531afa5-9da8-4f19-977b-71b3b5295e30",
+                "resourcePath": "shaders\\sh_white\\sh_white.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "a117a990-3e63-4945-ad84-05b8da59d419",
             "Value": {
                 "id": "da73b37e-c737-4492-8cbd-4f5b5cb7f3eb",
@@ -356,6 +364,14 @@
                 "id": "514c63db-c89b-42ac-8c7a-53d0c17c8c84",
                 "resourcePath": "rooms\\test_level\\test_level.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "8a5e65c2-f31f-4416-a503-091d61fcc018",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -460,6 +476,22 @@
                 "id": "f84ba0b2-5603-40a3-bd7d-24c6582ba964",
                 "resourcePath": "views\\e5e35c28-a995-425a-b445-99b57960d1a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eda99164-31fd-49c6-a4e2-acc358452802",
+            "Value": {
+                "id": "a8f2e48b-2f6b-4ef1-bb97-425679cd60fe",
+                "resourcePath": "shaders\\sh_red\\sh_red.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "b252c517-f0c8-4d42-b408-d4e79ef48f26",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
