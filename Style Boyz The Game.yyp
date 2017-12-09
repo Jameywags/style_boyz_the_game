@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03b7ac82-b9f0-4614-99ba-0ee574e22b76",
+            "Value": {
+                "id": "80ef81a6-0a33-4667-a147-13161f4b4174",
+                "resourcePath": "sprites\\s_mountain\\s_mountain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06ddb212-1594-41b6-a8c7-3fb884afa0a3",
             "Value": {
                 "id": "0d4e9ea8-feae-4097-af7e-f7e269b5b5f9",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "994527f1-8772-4e01-aa77-51ee3dc155df",
+            "Value": {
+                "id": "a9aa90ce-28cc-4d3b-8e9d-e63490b85073",
+                "resourcePath": "sprites\\s_trees\\s_trees.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9aee474f-cebd-4c09-8e27-63e211ccbf91",
             "Value": {
                 "id": "b61e4fdf-5302-40c7-ba44-4f50ff22644f",
@@ -490,6 +506,7 @@
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "b252c517-f0c8-4d42-b408-d4e79ef48f26",
+
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }

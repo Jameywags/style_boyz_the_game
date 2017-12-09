@@ -28,3 +28,4 @@ sprite = 1			//Initial value
 firing_delay = 0;	//Initial value
 dir_looking = 1;	// The direction we are looking
 ground_pound = 0;	//Initial value
+push_back = 0;		//Initial value 
