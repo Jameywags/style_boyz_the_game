@@ -289,6 +289,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 	o_bullet.bullet_range = 150;
 	o_bullet.atk_damage = 1;
 	o_bullet.wall_break = 0;
+	o_bullet.push_back = 0;										//Push backvariable in object o_bullet. 1=yes, 0 =no
 }
 
 if (boy == LUKE_ID)													//If boy two is chosen (Luke)
@@ -300,6 +301,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 	o_bullet.bullet_range = 100;
 	o_bullet.atk_damage = 2;
 	o_bullet.wall_break = 0;
+	o_bullet.push_back = 1;										//Push backvariable in object o_bullet. 1=yes, 0 =no
 }
 
 if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
@@ -311,4 +313,5 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 	o_bullet.bullet_range = 50;
 	o_bullet.atk_damage = 4;
 	o_bullet.wall_break = 1;
+	o_bullet.push_back = 0;										//Push backvariable in object o_bullet. 1=yes, 0 =no
 }

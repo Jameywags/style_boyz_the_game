@@ -1,6 +1,7 @@
 //Initial conditions
 hp = 3;				//Set initial hp to 3
 hit_delay = 0;		//dellay time for being hit again
+flash = 0;			//Initial flash set to 0
 
 hsp = 0;			//Horizontal speed
 vsp = 0;			//Vertical speed
@@ -28,3 +29,4 @@ firing_delay = 0;	//Initial value
 dir_looking = 1;	// The direction we are looking
 ground_pound = 0;	//Initial value
 wall_break = 0;		//Initial Value
+push_back = 0;		//Initial value 

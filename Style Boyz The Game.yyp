@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "03b7ac82-b9f0-4614-99ba-0ee574e22b76",
+            "Value": {
+                "id": "80ef81a6-0a33-4667-a147-13161f4b4174",
+                "resourcePath": "sprites\\s_mountain\\s_mountain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06ddb212-1594-41b6-a8c7-3fb884afa0a3",
             "Value": {
                 "id": "0d4e9ea8-feae-4097-af7e-f7e269b5b5f9",
@@ -303,11 +311,27 @@
             }
         },
         {
+            "Key": "994527f1-8772-4e01-aa77-51ee3dc155df",
+            "Value": {
+                "id": "a9aa90ce-28cc-4d3b-8e9d-e63490b85073",
+                "resourcePath": "sprites\\s_trees\\s_trees.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9aee474f-cebd-4c09-8e27-63e211ccbf91",
             "Value": {
                 "id": "b61e4fdf-5302-40c7-ba44-4f50ff22644f",
                 "resourcePath": "objects\\o_camera\\o_camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9ff29bd3-4d31-4223-8da8-b2d46c6b9bd3",
+            "Value": {
+                "id": "8531afa5-9da8-4f19-977b-71b3b5295e30",
+                "resourcePath": "shaders\\sh_white\\sh_white.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -356,6 +380,14 @@
                 "id": "514c63db-c89b-42ac-8c7a-53d0c17c8c84",
                 "resourcePath": "rooms\\test_level\\test_level.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "8a5e65c2-f31f-4416-a503-091d61fcc018",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -476,6 +508,23 @@
                 "id": "f691ad62-73b5-4d75-8959-9bd693bd5f66",
                 "resourcePath": "sprites\\s_wall_break\\s_wall_break.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eda99164-31fd-49c6-a4e2-acc358452802",
+            "Value": {
+                "id": "a8f2e48b-2f6b-4ef1-bb97-425679cd60fe",
+                "resourcePath": "shaders\\sh_red\\sh_red.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "b252c517-f0c8-4d42-b408-d4e79ef48f26",
+
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
