@@ -1,13 +1,13 @@
 {
-    "id": "98c78c45-21fe-461b-99c3-b1108394e0bf",
+    "id": "2c956f93-892e-4719-b310-de143dc729f7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_wall",
+    "name": "o_wall_break",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "98c78c45-21fe-461b-99c3-b1108394e0bf",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "84365a85-da17-4a50-a360-af75a2d69cc8",
     "visible": true
 }

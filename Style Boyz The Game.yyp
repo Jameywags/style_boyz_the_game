@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -82,7 +82,7 @@
             "Key": "12637e7f-7e6b-495e-8f45-332ae4428e6d",
             "Value": {
                 "id": "f4b5e1ee-d7c5-4b1a-8d44-18a1835e568a",
-                "resourcePath": "objects\\o_wall\\o_wall.yy",
+                "resourcePath": "objects\\o_wall_normal\\o_wall_normal.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -180,6 +180,14 @@
                 "id": "e7dfc2ac-d5fb-477d-abb9-45f885f57662",
                 "resourcePath": "views\\2aa37d13-e0dd-4cc4-b9ac-de6efb12fc0b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2c956f93-892e-4719-b310-de143dc729f7",
+            "Value": {
+                "id": "3ae3315f-9412-4455-8486-5218271e3a5f",
+                "resourcePath": "objects\\o_wall_break\\o_wall_break.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "84365a85-da17-4a50-a360-af75a2d69cc8",
+            "Value": {
+                "id": "2177e9c1-1f2e-4ede-872e-dd8d5d207517",
+                "resourcePath": "sprites\\s_wall_break\\s_wall_break.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86473c52-b8bd-4511-843c-2e6cae6bf354",
             "Value": {
                 "id": "65ae8d3c-4d36-470a-9597-3e57e7de9e45",
@@ -324,6 +340,14 @@
                 "id": "25ce2a3c-9e23-480c-a6bc-d352bb9e6a33",
                 "resourcePath": "scripts\\scr_pause_menu\\scr_pause_menu.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "98c78c45-21fe-461b-99c3-b1108394e0bf",
+            "Value": {
+                "id": "e9d7a160-a4cd-46f6-8493-c24ddbf2c975",
+                "resourcePath": "objects\\o_wall\\o_wall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
