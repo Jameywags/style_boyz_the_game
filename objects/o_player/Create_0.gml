@@ -1,5 +1,6 @@
 //Initial conditions
 hp = 3;				//Set initial hp to 3
+MAX_HP = 3;			//Set max hp
 hit_delay = 0;		//dellay time for being hit again
 flash = 0;			//Initial flash set to 0
 
