@@ -19,9 +19,11 @@ camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
 if (layer_exists("Mountains"))
 {
 	layer_x("Mountains", x/2);			//Using x gives max distance effect. Using 0 gives no distance effect.
+	layer_y("Mountains", 300+y/8);
 }
 
 if (layer_exists("Trees"))
 {
 	layer_x("Trees", x/4);			//Using x gives max distance effect. Using 0 gives no distance effect.
+	layer_y("Trees", 450+y/16);
 }
