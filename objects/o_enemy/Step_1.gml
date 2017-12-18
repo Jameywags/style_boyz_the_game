@@ -1,6 +1,7 @@
 //Initiates death stuff
 if (hp <= 0)												//if hp is less then or equal to 0
 {
+	audio_play_sound(snd_enemy_dead, 0, 0);
 	with (instance_create_layer(x,y,layer,o_enemy_D))		//Create the enemy death object
 	{
 		direction = other.hit_from;							//Set direction to the hit_from variable from o_enemy_D
