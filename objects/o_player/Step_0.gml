@@ -35,11 +35,32 @@ if (key_attack) && (firing_delay < 0)
 {
 	firing_delay = 10;
 	audio_play_sound(snd_shoot, 0, 0);
-	with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet))
+	if (shot_type == 1)
 	{
-		direction = dir;
-		image_xscale = 1;
-		speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
+		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Jamey))
+		{
+			direction = dir;
+			image_xscale = 1;
+			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
+		}
+	}
+	if (shot_type == 2)
+	{
+		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Luke))
+		{
+			direction = dir;
+			image_xscale = 1;
+			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
+		}
+	}
+	if (shot_type == 3)
+	{
+		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Himat))
+		{
+			direction = dir;
+			image_xscale = 1;
+			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
+		}
 	}
 }
 
@@ -287,6 +308,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
 	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 1;													//Changes sprite set to 1
+	shot_type = 1;												//Shot type
 	o_bullet.bullet_range = 150;								//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 1;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.push_back = 0;										//Push back variable in object o_bullet. 1=yes, 0 =no
@@ -299,6 +321,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 	wall_jump = 1;												//wall jump variable. 1=yes, 0 =no
 	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 2;													//Changes sprite set to 2
+	shot_type = 2;												//Shot type
 	o_bullet.bullet_range = 100;								//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 2;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.push_back = 1;										//Push backvariable in object o_bullet. 1=yes, 0 =no
@@ -311,6 +334,7 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
 	ground_pound = 1;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 3;													//Changes sprite set to 3
+	shot_type = 3;												//Shot type
 	o_bullet.bullet_range = 50;									//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 4;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.wall_break = 1;									//Wall break variable in object o_bullet. 1=yes, 0 =no
