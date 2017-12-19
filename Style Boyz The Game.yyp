@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "7e746052-5cd6-4316-905d-473cea97ded2",
+            "Value": {
+                "id": "3d6da65a-6988-4b32-b32e-55129f2e5034",
+                "resourcePath": "objects\\o_bullet_Himat\\o_bullet_Himat.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "84365a85-da17-4a50-a360-af75a2d69cc8",
             "Value": {
                 "id": "2177e9c1-1f2e-4ede-872e-dd8d5d207517",
@@ -372,6 +380,14 @@
                 "id": "65ae8d3c-4d36-470a-9597-3e57e7de9e45",
                 "resourcePath": "views\\86473c52-b8bd-4511-843c-2e6cae6bf354.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "88abebc1-3c87-4b18-ac9e-ce7a28b9bb7b",
+            "Value": {
+                "id": "d775a616-01c6-47d4-b0fd-ea89b9518d37",
+                "resourcePath": "sprites\\s_bullet_Luke\\s_bullet_Luke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -495,11 +511,27 @@
             }
         },
         {
+            "Key": "b16afa75-2b77-4fe8-b73a-735e2f9fbb3a",
+            "Value": {
+                "id": "92a8c21e-875b-4e76-a052-696444e70fa8",
+                "resourcePath": "objects\\o_bullet_Luke\\o_bullet_Luke.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b677ee06-ee8c-4935-9717-b0b3e8e27620",
             "Value": {
                 "id": "099f7d4d-4c79-4cc8-9c75-01ee84450c9c",
                 "resourcePath": "views\\b677ee06-ee8c-4935-9717-b0b3e8e27620.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b7536eef-d9d8-4bd0-a750-c9df56ce538d",
+            "Value": {
+                "id": "61aceb85-3dc2-4cf5-af66-2930bda69f56",
+                "resourcePath": "objects\\o_bullet_Jamey\\o_bullet_Jamey.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -554,7 +586,7 @@
             "Key": "d00607fc-47fc-41d7-90c9-eeb3eb68894c",
             "Value": {
                 "id": "5a9a127b-ed03-408f-8a54-5a70d32eb1c8",
-                "resourcePath": "sprites\\s_bullet1\\s_bullet1.yy",
+                "resourcePath": "sprites\\s_bullet_Jamey\\s_bullet_Jamey.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -652,6 +684,14 @@
                 "id": "99b88e30-0826-43f4-901b-dd8afc2e821e",
                 "resourcePath": "tilesets\\t_tiles\\t_tiles.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "fe105340-5dfa-4143-bd51-97a10101e42e",
+            "Value": {
+                "id": "cc874b32-27fc-4d4f-bb88-841caa41e91c",
+                "resourcePath": "sprites\\s_bullet_Himat\\s_bullet_Himat.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
