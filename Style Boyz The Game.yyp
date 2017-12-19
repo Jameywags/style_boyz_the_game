@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "350fe605-2389-4703-9095-133e4ba65fd0",
+            "Value": {
+                "id": "81c5ada9-2c95-4744-9645-515fe793b513",
+                "resourcePath": "objects\\o_sign1\\o_sign1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36d3b698-22bd-4950-8811-084025ec67ef",
             "Value": {
                 "id": "ae5eb48d-0035-435d-8b58-f87c09c9d9c1",

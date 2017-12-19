@@ -1,1 +1,1 @@
-reading = 0
+show_text = 0;
