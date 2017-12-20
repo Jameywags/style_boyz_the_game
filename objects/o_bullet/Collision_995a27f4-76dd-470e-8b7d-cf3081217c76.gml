@@ -24,4 +24,4 @@ if (o_player.shot_type == 1)
 {
 	hit = 1
 }
-if (hit == 1)
+
