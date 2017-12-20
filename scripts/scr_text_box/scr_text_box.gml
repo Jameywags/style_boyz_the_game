@@ -20,3 +20,5 @@ with (txt)
 	box_width = camera_get_view_width(view_camera[0]) - 64;
 	box_height = text_height + (padding *2);
 }
+
+return txt

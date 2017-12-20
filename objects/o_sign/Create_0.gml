@@ -1,1 +1,2 @@
-reading = 0
+display_text = "{ENTER TEXT HERE}"
+text_id = -1;
