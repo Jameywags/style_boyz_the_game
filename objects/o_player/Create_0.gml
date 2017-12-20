@@ -8,7 +8,7 @@ hsp = 0;			//Horizontal speed
 vsp = 0;			//Vertical speed
 
 grv = .4;			//Gravity
-max_vsp = 9;		//Max vertical speed
+max_vsp = 12;		//Max vertical speed
 
 move_speed = 0.25;	//initial move speed
 max_hsp = 5;		//cap to your speed left or right
@@ -31,4 +31,5 @@ dir_looking = 1;	// The direction we are looking
 ground_pound = 0;	//Initial value
 push_back = 0;		//Initial value 
 wall_break = 0;		//Initial value
-shot_type = 0;			//Initial value
+shot_type = 0;		//Initial value
+fall_damage = 0;	//Initial value
