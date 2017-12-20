@@ -300,6 +300,24 @@ if (ground_pound)
 	}
 }
 
+//Fall Damage
+if (fall_damage == 1)
+{
+	if (vsp >= max_vsp)
+	{
+		if (place_meeting(x,y+vsp,o_wall))	
+		{
+			if (hit_delay = 0)			//If hit delay is at 0
+			{
+				hp --;					//subtract 1 from hp
+				hit_delay = 50;		//Sets hit delay
+				flash = hit_delay;			//Sets flash to same length as hit delay
+				audio_play_sound(snd_player_hit, 0, 0);
+			}
+		}
+	}
+}
+
 //===== Code for each boy to assign variables =======================
 
 if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
@@ -309,6 +327,7 @@ if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
 	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 1;													//Changes sprite set to 1
 	shot_type = 1;												//Shot type
+	fall_damage = 0;											//Fall damage asign
 	o_bullet.bullet_range = 150;								//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 1;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.push_back = 0;										//Push back variable in object o_bullet. 1=yes, 0 =no
@@ -322,6 +341,7 @@ if (boy == LUKE_ID)													//If boy two is chosen (Luke)
 	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 2;													//Changes sprite set to 2
 	shot_type = 2;												//Shot type
+	fall_damage = 0;											//Fall damage asign
 	o_bullet.bullet_range = 100;								//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 2;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.push_back = 1;										//Push backvariable in object o_bullet. 1=yes, 0 =no
@@ -335,6 +355,7 @@ if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
 	ground_pound = 1;											//Ground pound variable. 1=yes, 0 =no
 	sprite = 3;													//Changes sprite set to 3
 	shot_type = 3;												//Shot type
+	fall_damage = 1;											//Fall damage asign
 	o_bullet.bullet_range = 50;									//bullet range variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.atk_damage = 4;									//atack damage variable in object o_bullet. 1=yes, 0 =no
 	o_bullet.wall_break = 1;									//Wall break variable in object o_bullet. 1=yes, 0 =no
