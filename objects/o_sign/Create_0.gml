@@ -1,1 +1,1 @@
-reading = 0
+text_id = -1;
