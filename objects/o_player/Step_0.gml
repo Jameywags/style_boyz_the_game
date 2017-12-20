@@ -27,8 +27,8 @@ key_attack = keyboard_check_pressed(ord("Z"));
 
 //Caculate movement
 var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
-var dir = 180*(dir_looking - 1)/2;
-
+var firing_angle = 180*(dir_looking - 1)/2;
+var firing_direction = sign(dir_looking)
 //Firing bullets
 firing_delay -= 1
 if (key_attack) && (firing_delay < 0) 
@@ -39,8 +39,8 @@ if (key_attack) && (firing_delay < 0)
 	{
 		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Jamey))
 		{
-			direction = dir;
-			image_xscale = 1;
+			direction = firing_angle;
+			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
 		}
 	}
@@ -48,8 +48,8 @@ if (key_attack) && (firing_delay < 0)
 	{
 		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Luke))
 		{
-			direction = dir;
-			image_xscale = 1;
+			direction = firing_angle;
+			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
 		}
 	}
@@ -57,8 +57,8 @@ if (key_attack) && (firing_delay < 0)
 	{
 		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Himat))
 		{
-			direction = dir;
-			image_xscale = 1;
+			direction = firing_angle;
+			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
 		}
 	}
