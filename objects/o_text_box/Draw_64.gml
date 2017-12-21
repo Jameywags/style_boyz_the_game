@@ -1,3 +1,4 @@
+
 //Add letters over time
 if (time < text_length)
 {
@@ -8,6 +9,7 @@ if (time < text_length)
 //Render textbox and text
 
 draw_set_alpha(alpha);
+
 if (alpha < 1)
 {
 	alpha += spd/10;
