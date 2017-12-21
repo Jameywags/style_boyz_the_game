@@ -1,1 +1,1 @@
-display_text = "Press 1, 2, or 3 to change between the boyz."
+display_text = "Press 1, 2, or 3 to change between the boyz. Guess which is Himat"

@@ -22,6 +22,7 @@ switch (mpos)
 	}
 	case 3:
 	{
+		audio_play_sound(snd_player_hit, 0, 0);
 		break;
 	}
 	case 4: game_end();	break;
