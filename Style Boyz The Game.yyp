@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "5861f51a-7e15-47a8-a85b-b78e5cfe8442",
+            "Value": {
+                "id": "557f81a1-1dd9-4fa6-aa75-1b7475461c1b",
+                "resourcePath": "objects\\o_game_over\\o_game_over.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a71a2f4-4285-4618-a18b-8746e7a0c9ca",
             "Value": {
                 "id": "39c0b8fe-72c8-42ce-82d3-e0e77badc932",
