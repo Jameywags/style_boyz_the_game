@@ -2,12 +2,6 @@ if (global.pause) exit;
 
 //===== similar code for all 3 ================================
 
-/*
- *	Constants
- */
-LUKE_ID = 2;
-JAMEY_ID = 1;
-HIMAT_ID = 3;
 
 //Get player input
 key_left = keyboard_check(vk_left);								//Will tell us if we push left arrow key. Virtual keyboard
@@ -16,111 +10,34 @@ key_left_pressed = keyboard_check_pressed(vk_left);				//Will tell us if we push
 key_right_presses = keyboard_check_pressed(vk_right);			//Will tell us if we push right arrow key. Virtual keyboard
 key_jump = keyboard_check_pressed(vk_space);					//Will check if we press 
 key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
-key_attack = keyboard_check_pressed(ord("Z"));					//Will tell if we press attack
 key_down = keyboard_check_pressed(vk_down);						//Will tell if we down
 key_up = keyboard_check_pressed(vk_up);							//Will tell if we up
-key_one = keyboard_check_pressed(ord("1"));						//Will check if we press "1"
-key_two = keyboard_check_pressed(ord("2"));						//Will check if we press "2"
-key_three = keyboard_check_pressed(ord("3"));					//Will check if we press "3"
 key_attack = keyboard_check_pressed(ord("Z"));
 
+touch_wall_down  = place_meeting(x,y+1,o_wall);
+touch_wall_up    = place_meeting(x,y-1,o_wall);
+touch_wall_left  = place_meeting(x-1,y,o_wall);
+touch_wall_right = place_meeting(x+1,y,o_wall);
 
-//Caculate movement
+// Check for "go night night" mode
+if(hp == 0) {
+	game_restart();
+}
+
+//Caculate horizontal movement direction
 var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
-var firing_angle = 180*(dir_looking - 1)/2;
-var firing_direction = sign(dir_looking)
+
 //Firing bullets
-firing_delay -= 1
-if (key_attack) && (firing_delay < 0) 
-{
-	firing_delay = 10;
-	audio_play_sound(snd_shoot, 0, 0);
-	if (shot_type == 1)
-	{
-		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Jamey))
-		{
-			direction = firing_angle;
-			image_xscale = firing_direction;
-			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
-		}
-	}
-	if (shot_type == 2)
-	{
-		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Luke))
-		{
-			direction = firing_angle;
-			image_xscale = firing_direction;
-			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
-		}
-	}
-	if (shot_type == 3)
-	{
-		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Himat))
-		{
-			direction = firing_angle;
-			image_xscale = firing_direction;
-			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
-		}
-	}
-}
+firing_delay = max(firing_delay-1,0);
 
+hit_delay = max(hit_delay-1,0);
 
-
-//Changing between boys
-if (key_one)													//If key one is pressed
-{
-	boy = JAMEY_ID;												//Set boy to 1
-}
-if (key_two)													//If key two is pressed
-{
-	boy = LUKE_ID;												//Set boy to 2
-}
-if (key_three)													//If key three is pressed
-{
-	boy = HIMAT_ID;												//Set boy to 3
-}
-
-//Sprites
-if (sprite == JAMEY_ID)												//If sprite set 1 is chosen (Jamey)
-{
-	sprite_stand = s_jamey;										//Set the standing sprite to Jamey's standing sprite
-	sprite_run = s_jamey_R;										//Set the running sprite to Jamey's running sprite
-	sprite_air = s_jamey_A;										//Set the Airborn sprite to Jamey's airborn sprite
-}
-
-if (sprite == LUKE_ID)													//If sprite set 2 is chosen (Luke)
-{
-	sprite_stand = s_luke;										//Set the standing sprite to Luke's standing sprite
-	sprite_run = s_luke_R;										//Set the running sprite to Luke's running sprite
-	sprite_air = s_luke_A;										//Set the Airborn sprite to Luke's airborn sprite
-}
-if (sprite == HIMAT_ID)													//If sprite set 3 is chosen (Himat)
-{
-	sprite_stand = s_himat;										//Set the standing sprite to Himat's standing sprite
-	sprite_run = s_himat_R;										//Set the running sprite to Himat's running sprite
-	sprite_air = s_himat_A;										//Set the Airborn sprite to Himat's airborn sprite
-}
-
-//hp stuff
-if (hp == 0)													//If hp = 0
-{
-	game_restart();												//Resart game
-}
-
-if (hit_delay > 0)												//If delay is greater then 0
-{
-	hit_delay --;												//Subtract 1 from hit delay
-}
-else
-{
-	hit_delay = 0;												//set hit_delay to 0
-}
 
 //Horizontal acceleration coast
 
 // Set a variable for deceleration based on in air or on ground
 curr_decel = hsp_decel
-if(!(place_meeting(x,y+1,o_wall)))
+if(!touch_wall_down)
 {
 	curr_decel /= 3;
 }
@@ -255,9 +172,9 @@ else															//If extra jump variable is off
 //Wall Jumps
 if (wall_jump)																	//Variable to give wall jump ability
 {
-	if (place_meeting(x+1,y,o_wall)) && (!place_meeting(x-1,y,o_wall))			//If wall is right but not left
+	if (touch_wall_right && !touch_wall_left)			//If wall is right but not left
 	{
-	    if (key_jump) && (!place_meeting(x,y+1,o_wall))// && (key_right)		//If press jump and not on ground
+	    if (key_jump) && (!touch_wall_down)		//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
 	        vsp -= wall_jump_vsp;												//Up speed
@@ -266,9 +183,9 @@ if (wall_jump)																	//Variable to give wall jump ability
 	}
 
 
-	if (place_meeting(x-1,y,o_wall)) && (!place_meeting(x+1,y,o_wall))			//If wall is left but not right
+	if (touch_wall_left && !touch_wall_right)			//If wall is left but not right
 	{
-	    if (key_jump) && (!place_meeting(x,y+1,o_wall))// && (key_left)			//If press jump and not on ground
+	    if (key_jump && !touch_wall_down)		//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
 	        vsp -= wall_jump_vsp;												//Up speed
@@ -276,12 +193,12 @@ if (wall_jump)																	//Variable to give wall jump ability
 	    }
 	}
 //Wall Slides Left
-    if (key_left = 1) && (vsp > 0) && (place_meeting(x-1,y,o_wall)) && (!place_meeting(x,y+1,o_wall))	//If pushing left, moving down, wall left, and no wall below
+    if (key_left == 1 && vsp > 0 && touch_wall_left && !touch_wall_down)	//If pushing left, moving down, wall left, and no wall below
     {
 		vsp = wall_slide_vsp;																			//Set vsp to wall slide vsp
     }
 //Wall Slides Right
-    if (key_right = 1) && (vsp > 0) && (place_meeting(x+1,y,o_wall)) && (!place_meeting(x,y+1,o_wall))	//If pushing right, moving down, wall right, and no wall below
+    if (key_right == 1 && vsp > 0 && touch_wall_right && !touch_wall_down)	//If pushing right, moving down, wall right, and no wall below
     {
         vsp = wall_slide_vsp;																			//Set vsp to wall slide vsp
     }
@@ -290,13 +207,10 @@ if (wall_jump)																	//Variable to give wall jump ability
 //ground pound
 if (ground_pound)
 {
-	if (!place_meeting(x,y+1,o_wall)) && (key_down)
+	if(!touch_wall_down && key_down)
 	{
-		if (!place_meeting(x,y+1,o_wall))
-		{
-			hsp = 0;
-			vsp = 10;
-		}
+		hsp = 0;
+		vsp = 10;
 	}
 }
 
@@ -316,48 +230,4 @@ if (fall_damage == 1)
 			}
 		}
 	}
-}
-
-//===== Code for each boy to assign variables =======================
-
-if (boy == JAMEY_ID)													//If boy one is chosen (Jamey)
-{
-	extra_jump = 1;												//extra jump variable. 1=yes, 0 =no
-	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
-	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
-	sprite = 1;													//Changes sprite set to 1
-	shot_type = 1;												//Shot type
-	fall_damage = 0;											//Fall damage asign
-	o_bullet.bullet_range = 150;								//bullet range variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.atk_damage = 1;									//atack damage variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.push_back = 0;										//Push back variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.wall_break = 0;									//Wall break variable in object o_bullet. 1=yes, 0 =no
-}
-
-if (boy == LUKE_ID)													//If boy two is chosen (Luke)
-{
-	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
-	wall_jump = 1;												//wall jump variable. 1=yes, 0 =no
-	ground_pound = 0;											//Ground pound variable. 1=yes, 0 =no
-	sprite = 2;													//Changes sprite set to 2
-	shot_type = 2;												//Shot type
-	fall_damage = 0;											//Fall damage asign
-	o_bullet.bullet_range = 100;								//bullet range variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.atk_damage = 2;									//atack damage variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.push_back = 1;										//Push backvariable in object o_bullet. 1=yes, 0 =no
-	o_bullet.wall_break = 0;									//Wall break variable in object o_bullet. 1=yes, 0 =no
-}
-
-if (boy == HIMAT_ID)													//If boy three is chosen (Himat)
-{
-	extra_jump = 0;												//extra jump variable. 1=yes, 0 =no
-	wall_jump = 0;												//wall jump variable. 1=yes, 0 =no
-	ground_pound = 1;											//Ground pound variable. 1=yes, 0 =no
-	sprite = 3;													//Changes sprite set to 3
-	shot_type = 3;												//Shot type
-	fall_damage = 1;											//Fall damage asign
-	o_bullet.bullet_range = 50;									//bullet range variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.atk_damage = 4;									//atack damage variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.wall_break = 1;									//Wall break variable in object o_bullet. 1=yes, 0 =no
-	o_bullet.push_back = 0;										//Push backvariable in object o_bullet. 1=yes, 0 =no
 }
