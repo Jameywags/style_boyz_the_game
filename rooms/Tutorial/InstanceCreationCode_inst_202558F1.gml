@@ -1,0 +1,1 @@
+display_text = "Right now you are playing as Jamey. But you can also be Luke and Himat."

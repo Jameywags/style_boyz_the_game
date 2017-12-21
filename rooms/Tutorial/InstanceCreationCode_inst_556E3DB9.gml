@@ -1,0 +1,1 @@
+display_text = "YOU! The plan is to add all of our friends. But not as players..."

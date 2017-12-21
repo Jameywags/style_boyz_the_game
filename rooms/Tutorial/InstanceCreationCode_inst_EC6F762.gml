@@ -1,0 +1,1 @@
+display_text = "Hello! Welcome to the game!"

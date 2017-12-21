@@ -1,0 +1,1 @@
+display_text = "Each boy has a unique shot with its own damage and effect."

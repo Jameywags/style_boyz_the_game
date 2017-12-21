@@ -1,0 +1,1 @@
+display_text = "YAY!!! You have completed the tutorial level!"
