@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "67fc3237-26f2-4eca-9edc-4657d949f3ec",
+            "Value": {
+                "id": "05fb3cec-da2e-4833-81e3-f6a7d2e413dc",
+                "resourcePath": "objects\\o_enemy_slow_D\\o_enemy_slow_D.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7c5ab320-2789-4c42-af25-2bb4f6f57809",
             "Value": {
                 "id": "2e71fe84-3fc8-47d1-9c14-52ef37455abd",
@@ -434,7 +442,7 @@
             "Key": "80fa9522-d5cc-43f8-a182-24284f4a9195",
             "Value": {
                 "id": "0d20e949-b35f-4de0-a33b-41aea7b6589d",
-                "resourcePath": "objects\\o_enemy_D1\\o_enemy_D1.yy",
+                "resourcePath": "objects\\o_enemy_fast_D\\o_enemy_fast_D.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -460,6 +468,14 @@
                 "id": "d775a616-01c6-47d4-b0fd-ea89b9518d37",
                 "resourcePath": "sprites\\s_bullet_Luke\\s_bullet_Luke.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "88ec887e-3593-428f-93f8-48a4ab86592c",
+            "Value": {
+                "id": "f41cec9a-0dd5-422b-a4e8-7bed5bede1b1",
+                "resourcePath": "objects\\o_enemy_slow\\o_enemy_slow.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -658,7 +674,7 @@
             "Key": "cdde8e75-c8b0-44c7-aa42-741fd7e2388c",
             "Value": {
                 "id": "f1b35952-a821-49d5-93eb-9e15888a66a6",
-                "resourcePath": "objects\\o_enemy1\\o_enemy1.yy",
+                "resourcePath": "objects\\o_enemy_fast\\o_enemy_fast.yy",
                 "resourceType": "GMObject"
             }
         },

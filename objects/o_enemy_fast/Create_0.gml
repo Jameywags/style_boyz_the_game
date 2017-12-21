@@ -11,3 +11,5 @@ flash = 0;			//Sets initial flash variable to 0
 hit_from = 0;		//Sets initial hit_from variable to 0
 
 move_direction = 1;
+
+slow_hit = 0;
