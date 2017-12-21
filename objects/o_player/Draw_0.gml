@@ -7,3 +7,4 @@ if (flash > 0)						//If flash is greater then 0
 	draw_self();					//Draw self with the shader
 	shader_reset();					//Reset to original
 }
+

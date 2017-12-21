@@ -27,9 +27,11 @@ wall_jump = 0;		//Initial value
 boy = 1				//Initial value
 sprite = 1			//Initial value
 firing_delay = 0;	//Initial value
-dir_looking = 1;	// The direction we are looking
+dir_looking = 1;	//The direction we are looking
 ground_pound = 0;	//Initial value
 push_back = 0;		//Initial value 
 wall_break = 0;		//Initial value
 shot_type = 0;		//Initial value
 fall_damage = 0;	//Initial value
+
+pause_id = -1;
