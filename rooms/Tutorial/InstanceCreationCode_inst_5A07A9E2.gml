@@ -1,0 +1,1 @@
+display_text = "Every type of enemy has different health and other factors."

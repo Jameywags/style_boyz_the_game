@@ -1,0 +1,1 @@
+display_text = "Himat can shoot down walls. Press 'Z' to fire with Himat."

@@ -1,0 +1,1 @@
+display_text = "Thank you for playing! We hope you enjoyed it."

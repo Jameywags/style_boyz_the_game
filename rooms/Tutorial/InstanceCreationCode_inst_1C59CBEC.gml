@@ -1,0 +1,1 @@
+display_text = "With hundreds of computer generated enemy types you are in for a ride."

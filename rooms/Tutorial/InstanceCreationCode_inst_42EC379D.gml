@@ -1,0 +1,1 @@
+display_text = "Luke can wall jump. While in the air against a wall, press 'space'."

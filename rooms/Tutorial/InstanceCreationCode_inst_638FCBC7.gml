@@ -1,0 +1,1 @@
+display_text = "Press 'space' to jump. The longer you hold, the higher you will jump."

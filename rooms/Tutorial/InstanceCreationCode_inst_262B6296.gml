@@ -1,0 +1,1 @@
+display_text = "Escape will pause the game. Or press 'R' to reset game."

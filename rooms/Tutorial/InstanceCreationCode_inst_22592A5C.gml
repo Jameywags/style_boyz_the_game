@@ -1,0 +1,1 @@
+display_text = "Himat is fragile and is the only one who takes fall damage."

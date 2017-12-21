@@ -1,0 +1,1 @@
+display_text = "Press 'space' twice to double jump."

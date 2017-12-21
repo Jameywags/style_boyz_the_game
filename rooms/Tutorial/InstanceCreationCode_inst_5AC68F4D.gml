@@ -1,0 +1,1 @@
+display_text = "I'm kidding... We made two enemies. But there is more to come.

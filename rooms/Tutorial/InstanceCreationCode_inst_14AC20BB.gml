@@ -1,0 +1,1 @@
+display_text = "Each boy has their own special abilities."

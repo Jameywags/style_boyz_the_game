@@ -1,0 +1,1 @@
+display_text = "WOW! A secret space. You must feel pretty special."

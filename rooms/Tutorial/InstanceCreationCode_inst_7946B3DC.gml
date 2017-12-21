@@ -1,0 +1,1 @@
+display_text = "What is up there?"
