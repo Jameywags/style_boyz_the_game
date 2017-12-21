@@ -1,1 +1,1 @@
-display_text = "Himat can shoot down walls. Press 'Z' to fire with Himat."
+display_text = "Press 'Z' to fire. Himat can shoot down walls."

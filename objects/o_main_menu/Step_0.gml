@@ -18,3 +18,10 @@ if (push == 1)
 	audio_play_sound(snd_select_2, 0, 0);
 	scr_main_menu();
 }
+
+test_button = keyboard_check_pressed(ord("T"));
+
+if (test_button)
+{
+	room_goto(2)
+}
