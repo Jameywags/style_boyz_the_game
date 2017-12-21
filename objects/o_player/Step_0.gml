@@ -2,6 +2,11 @@ if (global.pause) exit;
 
 //===== similar code for all 3 ================================
 
+// Check for "go night night" mode
+if(hp == 0) {
+	instance_create_layer(0,0,"Portal",o_game_over);
+	return;
+}
 
 //Get player input
 key_left = keyboard_check(vk_left);								//Will tell us if we push left arrow key. Virtual keyboard
@@ -19,10 +24,7 @@ touch_wall_up    = place_meeting(x,y-1,o_wall);
 touch_wall_left  = place_meeting(x-1,y,o_wall);
 touch_wall_right = place_meeting(x+1,y,o_wall);
 
-// Check for "go night night" mode
-if(hp == 0) {
-	game_restart();
-}
+
 
 //Caculate horizontal movement direction
 var move = key_right - key_left;								//Just right returns 1, just left returns -1, both or none returns 0
