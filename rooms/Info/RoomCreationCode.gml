@@ -18,7 +18,7 @@ perfect. It will take time. There will be bugs. But with some hard work
 eventually it will be amazing!
 
 We hope you enjoy the game cause we sure enjoy making it.
-Thank you. :) Press 'Enter' to return to menu...
+Thank you. :) Press 'Enter' to continue...
 ", 
 20, 
 camera_get_view_x(view_camera[0]) + 64,
