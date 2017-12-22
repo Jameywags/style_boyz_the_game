@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "5d7e7419-706c-48d3-92f9-c259b9b56540",
+            "Value": {
+                "id": "85e92763-21ee-419c-85af-6c643542419d",
+                "resourcePath": "objects\\o_info_reset\\o_info_reset.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5dddde9f-b8a0-4fad-8cfb-16319b59ef70",
             "Value": {
                 "id": "0264af8b-9c80-4b74-8bbe-b8cde2716066",

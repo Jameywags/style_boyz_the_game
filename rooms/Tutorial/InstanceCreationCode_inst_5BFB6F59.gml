@@ -1,1 +1,1 @@
-display_text = "It is not perfect but it is all made from scratch."
+display_text = "The game is not perfect but it is all made from scratch."
