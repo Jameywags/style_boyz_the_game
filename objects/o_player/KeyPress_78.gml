@@ -11,7 +11,7 @@ if(firing_delay <= 0)
 		o_bullet.atk_damage = 1;
 		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Jamey))
 		{
-			bullet_range = 150;	//bullet range variable in object o_bullet. 1=yes, 0 =no
+			bullet_range = 300;	//bullet range variable in object o_bullet. 1=yes, 0 =no
 			push_back = 0;		//Push back variable in object o_bullet. 1=yes, 0 =no
 			wall_break = 0;		//Wall break variable in object o_bullet. 1=yes, 0 =no
 			direction = firing_angle;
