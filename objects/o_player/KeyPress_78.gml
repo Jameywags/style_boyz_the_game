@@ -24,7 +24,7 @@ if(firing_delay <= 0)
 		with (instance_create_layer(x+10*sign(dir_looking),y,"Bullets",o_bullet_Luke))
 		{
 			bullet_range = 100;	//bullet range variable in object o_bullet. 1=yes, 0 =no
-			atk_damage = 2;		//atack damage variable in object o_bullet. 1=yes, 0 =no
+			atk_damage = 2;		//atack damage variable in object o_bullet. 1=yes, 0 =nos
 			push_back = 1;		//Push backvariable in object o_bullet. 1=yes, 0 =no
 			wall_break = 0;		//Wall break variable in object o_bullet. 1=yes, 0 =no
 			direction = firing_angle;
