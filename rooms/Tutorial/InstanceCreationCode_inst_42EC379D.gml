@@ -1,1 +1,1 @@
-display_text = "Luke can wall jump. While in the air against a wall, press 'space'."
+display_text = "Luke can wall jump. Jump and press space when you're against the wall."

@@ -1,1 +1,1 @@
-display_text = "Hello! Welcome to the game!"
+display_text = "Hello! Welcome to the game! Use 'A' and 'D' to move."

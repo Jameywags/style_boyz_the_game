@@ -1,7 +1,7 @@
 scr_text_box(@"                                   Welcome to 'Style Boyz The Game'!
 It all started one day when Jamey was bored and wanted a new hobby.
 He did some research on game making and decided it would be fun to try.
-Jamey, Luke, and Himat had recently hung out so this silly idea was born.
+Jamey, Luke, and Himat had recently hung out, so this silly idea was born.
 Jamey started this game alone and no one but Kelsey knew about it.
 After the initial groundwork was laid he realized he needed some
 coding help so he brought Luke onto the team. Although Luke didn't
@@ -18,8 +18,10 @@ perfect. It will take time. There will be bugs. But with some hard work
 eventually it will be amazing!
 
 We hope you enjoy the game cause we sure enjoy making it.
-Thank you. :) Press 'Enter' to continue...
+Thank you. :) 
+
+                                                                                    Press 'enter' to continue.
 ", 
 20, 
 camera_get_view_x(view_camera[0]) + 64,
-camera_get_view_y(view_camera[0]) + 64);
+camera_get_view_y(view_camera[0]) + 32);
