@@ -2,7 +2,7 @@
 
 var firing_angle = 180*(dir_looking - 1)/2;
 var firing_direction = sign(dir_looking)
-if(firing_delay <= 0) 
+if(firing_delay <= 0)
 {
 	firing_delay = 10;
 	audio_play_sound(snd_shoot, 0, 0);
