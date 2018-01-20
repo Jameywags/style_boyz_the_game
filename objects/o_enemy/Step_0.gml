@@ -1,10 +1,5 @@
 if (global.pause) exit;
 
-sprite_stand = s_enemy;										//Set the standing sprite to enemy's standing sprite
-sprite_run = s_enemy_R;										//Set the running sprite to enemy's running sprite
-sprite_air = s_enemy_A;										//Set the Airborn sprite to enemy's airborn sprite
-sprite_dead = s_enemy_D;									//Set the dead sprite to enemy's dead sprite
-
 vsp = vsp + grv;
 
 
@@ -63,8 +58,8 @@ else															//If we are on the ground, do this
 	}
 }
 
-if (hsp != 0) image_xscale = sign(hsp);							//Scale horizontaly by multiplier hsp, 1 = normal image, -1 = flip image
-
+if (hsp != 0) image_xscale = sign(hsp) * size;							//Scale horizontaly by multiplier hsp, 1 = normal image, -1 = flip image
+image_yscale = size;
 
 
 
