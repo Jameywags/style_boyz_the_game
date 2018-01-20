@@ -2,6 +2,7 @@
 if (hp <= 0)												//if hp is less then or equal to 0
 {
 	audio_play_sound(snd_enemy_dead, 0, 0);
+	screen_shake(3, 15)
 	with (instance_create_layer(x,y,layer,o_enemy_D))		//Create the enemy death object
 	{
 		sprite_index = other.sprite_dead

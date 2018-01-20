@@ -9,14 +9,14 @@ if(hp == 0) {
 }
 
 //Get player input
-key_left = keyboard_check(ord("A"));								//Will tell us if we push left arrow key. Virtual keyboard
-key_right = keyboard_check(ord("D"));							//Will tell us if we push right arrow key. Virtual keyboard
-key_left_pressed = keyboard_check_pressed(ord("A"));				//Will tell us if we push left arrow key. Virtual keyboard
-key_right_presses = keyboard_check_pressed(ord("D"));			//Will tell us if we push right arrow key. Virtual keyboard
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));								//Will tell us if we push left arrow key. Virtual keyboard
+key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));							//Will tell us if we push right arrow key. Virtual keyboard
+key_left_pressed = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));				//Will tell us if we push left arrow key. Virtual keyboard
+key_right_presses = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));			//Will tell us if we push right arrow key. Virtual keyboard
 key_jump = keyboard_check_pressed(vk_space);					//Will check if we press 
 key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
-key_down = keyboard_check_pressed(vk_down);						//Will tell if we down
-key_up = keyboard_check_pressed(vk_up);							//Will tell if we up
+key_down = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));						//Will tell if we down
+key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));							//Will tell if we up
 key_attack = keyboard_check_pressed(ord("Z"));
 
 touch_wall_down  = place_meeting(x,y+1,o_wall);

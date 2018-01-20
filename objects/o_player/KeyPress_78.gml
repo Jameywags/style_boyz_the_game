@@ -14,6 +14,7 @@ if(firing_delay <= 0)
 			bullet_range = 300;	//bullet range variable in object o_bullet. 1=yes, 0 =no
 			push_back = 0;		//Push back variable in object o_bullet. 1=yes, 0 =no
 			wall_break = 0;		//Wall break variable in object o_bullet. 1=yes, 0 =no
+			screen_shake(1.5, 10)
 			direction = firing_angle;
 			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
@@ -27,6 +28,7 @@ if(firing_delay <= 0)
 			bullet_range = 100;	//bullet range variable in object o_bullet. 1=yes, 0 =no
 			push_back = 1;		//Push backvariable in object o_bullet. 1=yes, 0 =no
 			wall_break = 0;		//Wall break variable in object o_bullet. 1=yes, 0 =no
+			screen_shake(2, 10)
 			direction = firing_angle;
 			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
@@ -40,6 +42,7 @@ if(firing_delay <= 0)
 			bullet_range = 50;		//bullet range variable in object o_bullet. 1=yes, 0 =no
 			wall_break = 1;		//Wall break variable in object o_bullet. 1=yes, 0 =no
 			push_back = 0;			//Push backvariable in object o_bullet. 1=yes, 0 =no
+			screen_shake(2.5, 10)
 			direction = firing_angle;
 			image_xscale = firing_direction;
 			speed = o_player.max_hsp*1.5 + o_player.hsp*sign(o_player.hsp);
