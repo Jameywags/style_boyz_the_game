@@ -261,6 +261,20 @@
             "value": "s_enemy_D",
             "varName": "sprite_dead",
             "varType": 0
+        },
+        {
+            "id": "d7d18f3e-133b-4cbb-8330-496be660fbf3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fear_of_heights",
+            "varType": 0
         }
     ],
     "solid": false,

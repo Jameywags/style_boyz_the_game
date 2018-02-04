@@ -19,20 +19,26 @@ if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be
 	{
 		x = x + sign(hsp);										//Move one pixel in the direction we are moving
 	}
-	hsp = -hsp;													//Set hsp to 0
-	move_direction *= -1
+	hsp = -hsp;													
+	move_direction *= -1;
 }
 
 x = x + hsp;													//Every frame you move right or left the amount walksp is.
 
 //Vertical collision
-if (place_meeting(x,y+vsp,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+if (place_meeting(x,y+vsp,o_wall))								//Is there a colision where we will be next frame after one more vsp? If so do this? (Are we on the floor?)
 {			
 	while (!place_meeting(x,y+sign(vsp),o_wall))				//If a collision is not detected in the direction of movement do this
 	{
 		y = y + sign(vsp);										//Move one pixel in the direction we are moving
 	}
 	vsp = 0;													//Set hsp to 0
+	
+	if (fear_of_heights) && !position_meeting(x + (sprite_width/2) * move_direction, y + (sprite_height/2) + 1, o_wall)			//If checks position infront of enemy move direction and a few pixels down. This down value can be changed, its for wlaking off small ledges and slopes.
+	{
+		hsp = -hsp;
+		move_direction *= -1;
+	}
 }
 
 y = y + vsp;													//Every frame you move right or left the amount walksp is.
