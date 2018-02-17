@@ -33,7 +33,7 @@ if (place_meeting(x,y+vsp,o_wall))								//Is there a colision where we will be
 	}
 	vsp = 0;													//Set hsp to 0
 	
-	if (fear_of_heights) && !position_meeting(x + (20) * move_direction, y + (20) + 8, o_wall)			//If checks position infront of enemy move direction and a few pixels down. This down value can be changed, its for wlaking off small ledges and slopes.
+	if (fear_of_heights) && !position_meeting(x + (sprite_width/4), y + (sprite_height/2) + 8, o_wall)			//If checks position infront of enemy move direction and a few pixels down. This down value can be changed, its for wlaking off small ledges and slopes.
 	{
 		hsp = -hsp;
 		move_direction *= -1;
