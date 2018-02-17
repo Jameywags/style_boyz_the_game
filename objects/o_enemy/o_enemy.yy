@@ -261,6 +261,20 @@
             "value": "s_enemy_D",
             "varName": "sprite_dead",
             "varType": 0
+        },
+        {
+            "id": "df068bed-41e9-4984-8fdd-99d49d280e95",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "weight",
+            "varType": 0
         }
     ],
     "solid": false,
