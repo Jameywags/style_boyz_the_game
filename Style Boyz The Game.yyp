@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "ab37c62e-8521-43c9-8707-a6123acb53b6",
+            "Value": {
+                "id": "ba88bce3-8778-42fd-b272-caf11657f6b1",
+                "resourcePath": "objects\\o_enemy_chase\\o_enemy_chase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b16afa75-2b77-4fe8-b73a-735e2f9fbb3a",
             "Value": {
                 "id": "92a8c21e-875b-4e76-a052-696444e70fa8",
