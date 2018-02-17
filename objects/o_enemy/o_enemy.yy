@@ -274,6 +274,7 @@
         },
         {
             "id": "d7d18f3e-133b-4cbb-8330-496be660fbf3",
+
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
