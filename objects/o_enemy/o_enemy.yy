@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "1302763a-2f54-44ce-9d45-e923518ecef6"
+        },
+        {
+            "id": "bc20e5bc-af43-457a-9bce-08782e20a233",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "1302763a-2f54-44ce-9d45-e923518ecef6"
         }
     ],
     "maskSpriteId": "27350794-8de1-4925-8e7b-00e39832148a",
@@ -263,7 +273,8 @@
             "varType": 0
         },
         {
-            "id": "df068bed-41e9-4984-8fdd-99d49d280e95",
+            "id": "d7d18f3e-133b-4cbb-8330-496be660fbf3",
+
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -273,7 +284,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "1",
-            "varName": "weight",
+            "varName": "fear_of_heights",
             "varType": 0
         }
     ],
