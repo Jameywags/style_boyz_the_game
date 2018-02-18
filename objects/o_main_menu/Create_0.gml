@@ -1,6 +1,7 @@
 menu[0] = "Start";
-menu[1] = "Info";
-menu[2] = "Quit";
+menu[1] = "Test levels";
+menu[2] = "Info";
+menu[3] = "Quit";
 
 
 space = 64;
