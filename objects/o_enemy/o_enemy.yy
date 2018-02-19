@@ -274,7 +274,6 @@
         },
         {
             "id": "d7d18f3e-133b-4cbb-8330-496be660fbf3",
-
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -285,6 +284,20 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "fear_of_heights",
+            "varType": 0
+        },
+        {
+            "id": "e591043a-0c72-43f2-9f1c-dce5ef220259",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "weight",
             "varType": 0
         }
     ],
