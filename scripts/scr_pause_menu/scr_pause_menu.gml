@@ -15,8 +15,8 @@ switch (mpos)
 	}
 	case 2:
 	{
-		game_restart();
-		room_goto(1);
+		room_goto_previous()
+		room_restart()
 		global.pause = 0;
 		break;
 	}
