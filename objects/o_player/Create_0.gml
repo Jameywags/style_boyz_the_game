@@ -60,3 +60,6 @@ fall_damage = 0;	//Initial value
 
 pause_id = -1;		//Initial value
 
+
+//Key mapping
+jump_key = vk_space		//Original controlls

@@ -2,27 +2,42 @@ switch (mpos)
 {
 	case 0:
 	{
-		room_goto_next();
+		
 		break;
 	}
 	case 1:
 	{
-		room_goto(4);
+		
 		break;
 	}
 	case 2:
 	{
-		room_goto(8);
+		o_key_map.start_map = 1;
 		break;
 	}
 	case 3:
 	{
-		room_goto(3);
+		
 		break;
 	}
 	case 4:
 	{
-		game_end();	break;
+		
+		break;
+	}
+	case 5:
+	{
+		
+		break;
+	}
+	case 6:
+	{
+		
+		break;
+	}
+	case 7:
+	{
+		room_goto(0);
 		break;
 	}
 	default: break;
