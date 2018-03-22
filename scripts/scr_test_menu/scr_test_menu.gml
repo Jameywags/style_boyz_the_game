@@ -22,6 +22,11 @@ switch (mpos)
 	}
 	case 4:
 	{
+		room_goto(8);
+		break;
+	}
+	case 5:
+	{
 		room_goto(0);
 		break;
 	}
