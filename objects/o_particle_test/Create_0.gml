@@ -19,7 +19,3 @@ part_type_life(part1, room_speed*2, room_speed*4);
 part_type_blend(part1, 1);
 
 
-//Particle Emitter
-part1_emit = part_emitter_create(part1_sys);
-part_emitter_region(part1_sys, part1_emit, x-40, x+40, y-40, y+40, ps_shape_ellipse, ps_distr_gaussian);
-part_emitter_stream(part1_sys, part1_emit, part1, 1);

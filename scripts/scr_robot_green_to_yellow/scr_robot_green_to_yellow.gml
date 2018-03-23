@@ -10,3 +10,5 @@ if (timer = 1)
 	alarm_set(2,150);
 	timer = 0;
 }
+
+o_particle_robot_sparks.spark = 1;

@@ -991,6 +991,14 @@
             }
         },
         {
+            "Key": "c8ce0a6f-9005-476c-9ec5-d0a1a11b031b",
+            "Value": {
+                "id": "8cc05d1b-ea82-4f9c-b498-3643c3add4e1",
+                "resourcePath": "objects\\o_particle_robot_sparks\\o_particle_robot_sparks.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb804dec-79ae-480c-9e81-9ae97dc43486",
             "Value": {
                 "id": "7d375f61-b1c4-4c53-86d5-babd342a74c7",
