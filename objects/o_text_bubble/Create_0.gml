@@ -1,0 +1,9 @@
+spd = 0.5;
+letters = 0;
+text = "This is a test string!\nSecond line that is longer than the first!";
+length = string_length (text);
+text_current = "";
+w = 0;
+h = 0;
+border = 10;
+round_radius = 15
