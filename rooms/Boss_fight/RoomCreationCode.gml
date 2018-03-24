@@ -9,3 +9,5 @@ enum states
 	red,
 	explode
 }
+
+o_particle_robot_sparks.spark = 0;

@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "32f91188-ee11-48e0-b434-ef6817526b8a",
+            "Value": {
+                "id": "d9e8a088-e846-4c8f-98ef-2c3aecc4e069",
+                "resourcePath": "objects\\o_particle_fire\\o_particle_fire.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "332aa901-7ff1-47da-bb5e-d84e2ba99597",
             "Value": {
                 "id": "9d9c12f5-da80-475c-843e-089b562f7db1",
@@ -679,6 +687,14 @@
             }
         },
         {
+            "Key": "873ea206-6bac-4315-82b5-32da3d05a62c",
+            "Value": {
+                "id": "d4067451-8567-4d7d-b539-b1c10bbfa6a8",
+                "resourcePath": "sprites\\s_particle_fire_test\\s_particle_fire_test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "880494b8-0193-44be-bdf9-c1eae4394b1e",
             "Value": {
                 "id": "7cd1d5bf-348a-4bcb-9d09-1fd142ab65b4",
@@ -731,6 +747,14 @@
             "Value": {
                 "id": "f191ddc3-da55-468c-93b9-16ee3281153d",
                 "resourcePath": "objects\\o_mini_robot\\o_mini_robot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "97a8b669-9aa3-4cfa-982b-895822b2c7c7",
+            "Value": {
+                "id": "9dd45ccf-36f9-42b3-a517-3e59f88abfd1",
+                "resourcePath": "objects\\o_particle_test\\o_particle_test.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -871,6 +895,14 @@
             }
         },
         {
+            "Key": "b0e3db39-fa30-4730-9b71-258693f2a47b",
+            "Value": {
+                "id": "1a0b3b1b-853c-473d-bfe4-e2cc472c3d1b",
+                "resourcePath": "objects\\o_particle_fairy_dust\\o_particle_fairy_dust.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b16afa75-2b77-4fe8-b73a-735e2f9fbb3a",
             "Value": {
                 "id": "92a8c21e-875b-4e76-a052-696444e70fa8",
@@ -927,6 +959,14 @@
             }
         },
         {
+            "Key": "c13f3579-3d01-4ad1-bc8d-3f26727b8c1b",
+            "Value": {
+                "id": "68688280-3e5d-41ee-8f86-1f0e86b26ffa",
+                "resourcePath": "rooms\\Particle\\Particle.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c587f830-d073-4f40-8214-cef6819831c8",
             "Value": {
                 "id": "249a068e-82e5-4603-ad59-1ea1da46ef84",
@@ -948,6 +988,14 @@
                 "id": "e3d7ab50-aedf-47bd-955d-b42f6236dba6",
                 "resourcePath": "sprites\\s_robot_roll_R\\s_robot_roll_R.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c8ce0a6f-9005-476c-9ec5-d0a1a11b031b",
+            "Value": {
+                "id": "8cc05d1b-ea82-4f9c-b498-3643c3add4e1",
+                "resourcePath": "objects\\o_particle_robot_sparks\\o_particle_robot_sparks.yy",
+                "resourceType": "GMObject"
             }
         },
         {
