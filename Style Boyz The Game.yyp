@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "490e02e8-4eb5-485d-bfc9-fc3635344daa",
+            "Value": {
+                "id": "1b4ebf8d-2418-44e3-ad89-fd14fdbbdbd2",
+                "resourcePath": "sprites\\s_boy_change_Jamey\\s_boy_change_Jamey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "49eb75da-0b67-468e-88ac-1316bfafe7db",
             "Value": {
                 "id": "57144015-5917-4dbd-9743-8ebf71960fac",
@@ -532,6 +540,14 @@
                 "id": "74ab7066-dd98-4cbd-8c2a-97d325b5a961",
                 "resourcePath": "views\\503ac5ca-f38b-42dd-a553-f8d930c9f3cd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5487c056-c4d4-4625-8009-3ba49383f3f1",
+            "Value": {
+                "id": "f01a4e48-9139-481f-9f82-0634e2832a86",
+                "resourcePath": "objects\\o_boy_change\\o_boy_change.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -628,6 +644,14 @@
                 "id": "82b84832-1021-4f90-88f0-443acd7b9c1c",
                 "resourcePath": "objects\\o_powerup\\o_powerup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6817796b-a6be-4077-82a3-8ebfdce12693",
+            "Value": {
+                "id": "eea2450a-fa5b-4f38-8b9b-be9970d0b71f",
+                "resourcePath": "sprites\\s_boy_change_Luke\\s_boy_change_Luke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1068,6 +1092,14 @@
                 "id": "710a639e-f9a7-4cdf-bb18-623832e4cba5",
                 "resourcePath": "views\\cd060beb-c93d-4a9a-b611-64025011571a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cd578181-4e67-4658-a354-2aa9d2f35b2f",
+            "Value": {
+                "id": "4f9c1929-4b55-439a-a16b-00328c63fa36",
+                "resourcePath": "sprites\\s_boy_change_Himat\\s_boy_change_Himat.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

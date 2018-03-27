@@ -1,5 +1,9 @@
 /// @description Switch to Himat
-
+if (boy != HIMAT_ID)
+{
+	instance_create_depth(x, y, 1, o_boy_change)
+	o_boy_change.sprite_index = s_boy_change_Himat
+}
 boy = HIMAT_ID;
 
 extra_jump = 0;					//extra jump variable. 1=yes, 0 =no

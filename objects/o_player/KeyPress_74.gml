@@ -1,5 +1,9 @@
 /// @description Switch to Jamey
-
+if (boy != JAMEY_ID)
+{
+	instance_create_depth(x, y, 1, o_boy_change)
+	o_boy_change.sprite_index = s_boy_change_Jamey
+}
 boy = JAMEY_ID;
 
 extra_jump = 1;					//extra jump variable. 1=yes, 0 =no
