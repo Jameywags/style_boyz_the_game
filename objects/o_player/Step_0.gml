@@ -3,21 +3,33 @@ if (global.pause) exit;
 //===== similar code for all 3 ================================
 
 // Check for "go night night" mode
-if(hp == 0) {
-	instance_create_layer(0,0,"Portal",o_game_over);
-	return;
-}
+
 
 //Get player input
-key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));								//Will tell us if we push left arrow key. Virtual keyboard
-key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));							//Will tell us if we push right arrow key. Virtual keyboard
-key_left_pressed = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));				//Will tell us if we push left arrow key. Virtual keyboard
-key_right_presses = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));			//Will tell us if we push right arrow key. Virtual keyboard
-key_jump = keyboard_check_pressed(vk_space);					//Will check if we press 
-key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
-key_down = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));						//Will tell if we down
-key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));							//Will tell if we up
-key_attack = keyboard_check_pressed(ord("Z"));
+if (has_control)
+{
+	key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));								//Will tell us if we push left arrow key. Virtual keyboard
+	key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));							//Will tell us if we push right arrow key. Virtual keyboard
+	key_left_pressed = keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("A"));				//Will tell us if we push left arrow key. Virtual keyboard
+	key_right_pressed = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));			//Will tell us if we push right arrow key. Virtual keyboard
+	key_jump = keyboard_check_pressed(vk_space);					//Will check if we press 
+	key_jump_held = keyboard_check(vk_space);						//Will tell us if we hold jump key
+	key_down = keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));						//Will tell if we down
+	key_up = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));							//Will tell if we up
+	key_attack = keyboard_check_pressed(ord("Z"));
+}
+else
+{
+	key_left = 0;
+	key_right = 0;
+	key_left_pressed = 0;
+	key_right_pressed = 0;
+	key_jump = 0;
+	key_jump_held = 0;
+	key_down = 0;
+	key_up = 0;
+	key_attack = 0;
+}
 
 touch_wall_down  = place_meeting(x,y+1,o_wall);
 touch_wall_up    = place_meeting(x,y-1,o_wall);

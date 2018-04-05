@@ -3,6 +3,12 @@ if (instance_exists(follow))
 {
 	x_to = follow.x;
 	y_to = follow.y;
+	
+	if ((follow).object_index == o_player_D)
+	{
+		x = x_to;
+		y = y_to
+	}
 }
 
 //Update object position

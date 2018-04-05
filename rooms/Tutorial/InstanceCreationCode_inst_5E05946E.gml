@@ -1,1 +1,0 @@
-display_text = "HAHA! You are stuck! Pause and restart the game... Loser."

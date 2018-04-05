@@ -1,1 +1,0 @@
-display_text = "Press 'N' to shoot the enemies."
