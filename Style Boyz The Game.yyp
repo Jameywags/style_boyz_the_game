@@ -143,6 +143,22 @@
             }
         },
         {
+            "Key": "10fbc6cf-81f7-4c7d-a96e-cc2f9899499e",
+            "Value": {
+                "id": "b123992d-cada-446a-ab5d-6900e1fc2b60",
+                "resourcePath": "sprites\\s_coin\\s_coin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "124ba819-3ac4-4f8c-ad97-9e2a2c5cefba",
+            "Value": {
+                "id": "f58a2e71-acb4-49da-abc2-fb2d516cb006",
+                "resourcePath": "fonts\\fnt_GUI\\fnt_GUI.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "12637e7f-7e6b-495e-8f45-332ae4428e6d",
             "Value": {
                 "id": "f4b5e1ee-d7c5-4b1a-8d44-18a1835e568a",
@@ -188,6 +204,14 @@
                 "id": "480cb357-af77-44b2-8e26-e7ba86e4126f",
                 "resourcePath": "sprites\\s_robot_stand_Y\\s_robot_stand_Y.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1910befb-037f-4ab2-b4f3-45f66ff40048",
+            "Value": {
+                "id": "ead279c6-2255-4829-918c-5805e6788593",
+                "resourcePath": "objects\\o_coin\\o_coin.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -747,6 +771,14 @@
             "Value": {
                 "id": "e6941634-92f8-42a1-864b-d00344237168",
                 "resourcePath": "sprites\\s_portal\\s_portal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "82199ef2-e7de-4fbe-b03e-d82c97ebb7ca",
+            "Value": {
+                "id": "c538becf-c2bf-450a-b7d4-ede02f09764e",
+                "resourcePath": "sprites\\s_coin_effect\\s_coin_effect.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1324,6 +1356,14 @@
                 "id": "c8605536-c20e-4df7-a4b5-51f24514a17a",
                 "resourcePath": "objects\\o_transition\\o_transition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f9a6b22a-b45a-430b-9812-9e857e9a94ee",
+            "Value": {
+                "id": "a330a51b-bb6a-4260-86af-82c5c2780cbc",
+                "resourcePath": "sounds\\snd_pickup_coin\\snd_pickup_coin.yy",
+                "resourceType": "GMSound"
             }
         },
         {

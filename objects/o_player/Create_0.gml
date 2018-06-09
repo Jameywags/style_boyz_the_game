@@ -23,6 +23,8 @@ fall_damage = 0;				//Fall damage asign
 
 hp = 3;				//Set initial hp to 3
 
+coins = 0;			//Number of initial coins
+
 // KINEMATICS
 
 hsp = 0;			//Horizontal speed
