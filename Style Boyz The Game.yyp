@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00148b82-f140-45cc-a223-dd4d912cf023",
+            "Value": {
+                "id": "71f3f0c6-58c2-485f-87ca-d836591dfd37",
+                "resourcePath": "sprites\\sprite53\\sprite53.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "00d17259-d544-4136-8453-dd80727da9f6",
             "Value": {
                 "id": "55ed5b8a-2f92-4acb-bb02-725c3bc37237",
@@ -140,6 +148,14 @@
                 "id": "5df2e6cb-0e78-41a1-b77b-aabe79d0531b",
                 "resourcePath": "sprites\\s_box\\s_box.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0ff4c502-aadc-452b-8d10-6aec65608a95",
+            "Value": {
+                "id": "c87df57a-dd63-4d24-8a1f-c5c2e63ad396",
+                "resourcePath": "objects\\o_enemy_fly\\o_enemy_fly.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -919,6 +935,14 @@
             }
         },
         {
+            "Key": "9f06f815-5664-4688-a782-67cae97d98b4",
+            "Value": {
+                "id": "a276c50e-4fec-474a-92bb-462d6fb3d6f8",
+                "resourcePath": "views\\9f06f815-5664-4688-a782-67cae97d98b4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9ff29bd3-4d31-4223-8da8-b2d46c6b9bd3",
             "Value": {
                 "id": "8531afa5-9da8-4f19-977b-71b3b5295e30",
@@ -1087,6 +1111,14 @@
             }
         },
         {
+            "Key": "bb855732-9f3e-47db-ae36-95f0ea20f369",
+            "Value": {
+                "id": "00e3a93c-7fb0-465b-a339-383b647f668d",
+                "resourcePath": "sprites\\s_enemy_Fly\\s_enemy_Fly.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf55dbe9-d167-4986-bf2b-17186e2eff40",
             "Value": {
                 "id": "b13d7660-ccb4-4d30-937d-21d5900ae254",
@@ -1227,6 +1259,14 @@
             "Value": {
                 "id": "a7bf7279-b90f-4c1b-a89e-69e5ef697af0",
                 "resourcePath": "sprites\\s_enemy_R\\s_enemy_R.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d928fa8c-b884-499b-962e-589ea47d41e9",
+            "Value": {
+                "id": "fabd102b-48fd-496f-a38b-4a12b74bec43",
+                "resourcePath": "sprites\\s_enemy_fly_D\\s_enemy_fly_D.yy",
                 "resourceType": "GMSprite"
             }
         },
