@@ -18,8 +18,8 @@ if (y >= y_bot) && (vsp > 0)	//At bottom limit, moving down -> start moving up
 	vsp = -vsp;
 }
 
-if (vsp < 1) {sprite_index = s_enemy_fly_up;}
-if (vsp > 1) {sprite_index = s_enemy_fly_down;}
+if (vsp < 0) {sprite_index = s_enemy_fly_up;}
+if (vsp > 0) {sprite_index = s_enemy_fly_down;}
 
 
 
