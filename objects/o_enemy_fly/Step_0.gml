@@ -1,24 +1,25 @@
 
 
 //Motion anf limits
-if (y < y_top) && (vsp > 1)		//Lower then top limit, moving up -> keep moving up
+if (y > y_top) && (vsp < 0)		//Lower then top limit, moving up -> keep moving up
 {
 	y = y + vsp;
 }
-if (y >= y_top) && (vsp > 1)	//At top limit, moving up -> start moving down
+if (y <= y_top) && (vsp < 0)	//At top limit, moving up -> start moving down
 {
 	vsp = -vsp;
 }
-if (y > y_bot) && (vsp < 1)		//Higher then bottom limit, moving down -> keep moving down
+if (y < y_bot) && (vsp > 0)		//Higher then bottom limit, moving down -> keep moving down
 {
 	y = y + vsp;
 }
-if (y <= y_bot) && (vsp < 1)	//At bottom limit, moving down -> start moving up
+if (y >= y_bot) && (vsp > 0)	//At bottom limit, moving down -> start moving up
 {
 	vsp = -vsp;
 }
 
-
+if (vsp < 1) {sprite_index = s_enemy_fly_up;}
+if (vsp > 1) {sprite_index = s_enemy_fly_down;}
 
 
 

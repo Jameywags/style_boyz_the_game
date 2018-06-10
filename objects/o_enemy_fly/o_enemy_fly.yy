@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "0ff4c502-aadc-452b-8d10-6aec65608a95"
+        },
+        {
+            "id": "05d8810b-e88a-488a-ac81-00255e995131",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "0ff4c502-aadc-452b-8d10-6aec65608a95"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,7 +41,7 @@
             "mvc": "1.0",
             "objectId": "1302763a-2f54-44ce-9d45-e923518ecef6",
             "propertyId": "ca1edbee-b000-4af0-8a23-92ec246c3e2b",
-            "value": ".5"
+            "value": "1"
         }
     ],
     "parentObjectId": "1302763a-2f54-44ce-9d45-e923518ecef6",
@@ -73,7 +83,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "y_original + 100",
+            "value": "y_original - 100",
             "varName": "y_top",
             "varType": 4
         },
@@ -87,7 +97,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "y_original - 100",
+            "value": "y_original + 100",
             "varName": "y_bot",
             "varType": 4
         }
