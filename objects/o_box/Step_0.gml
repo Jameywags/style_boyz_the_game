@@ -18,10 +18,15 @@ if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be
 	{
 		x = x + sign(hsp);										//Move one pixel in the direction we are moving
 	}
-	hsp = -hsp/8;													
+	hsp = -hsp/8;
+
 	move_direction *= -1;
 }
 
+if(abs(hsp) < 0.5) {
+	hsp = 0;
+}
+	
 x = x + hsp;													//Every frame you move right or left the amount walksp is.
 
 //Vertical collision
