@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "2cf44149-04ee-4a9b-813a-6608279a6a92",
+            "Value": {
+                "id": "3c589b3a-a305-4722-be8a-212c521af04b",
+                "resourcePath": "sprites\\s_button_trigger_off\\s_button_trigger_off.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2f588fdc-e5ee-49c3-806e-d6f50c7c3ac2",
             "Value": {
                 "id": "5a1f1e8e-6867-4d4b-bd3b-3a74789474dc",
@@ -764,14 +772,6 @@
                 "id": "d0f43c25-5ce0-4422-ab39-9995533ad217",
                 "resourcePath": "objects\\o_box\\o_box.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7bcb505c-61bb-4310-a4d2-1d4964ae9db8",
-            "Value": {
-                "id": "119e20a4-8b22-412d-a52e-7fd1bb11ff0e",
-                "resourcePath": "sprites\\trigger_off\\trigger_off.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1239,18 +1239,18 @@
             }
         },
         {
-            "Key": "cf20ce69-c24f-4686-b198-5bdebe6f84f8",
-            "Value": {
-                "id": "1e24d1bb-850b-4797-a5a9-3b478f0586da",
-                "resourcePath": "objects\\Trigger\\Trigger.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d00607fc-47fc-41d7-90c9-eeb3eb68894c",
             "Value": {
                 "id": "5a9a127b-ed03-408f-8a54-5a70d32eb1c8",
                 "resourcePath": "sprites\\s_bullet_Jamey\\s_bullet_Jamey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d0ca2559-260a-4ebc-808f-5d3bcc92e5e0",
+            "Value": {
+                "id": "519eb635-509d-4754-8252-1617df7e2d32",
+                "resourcePath": "sprites\\s_button_trigger_on\\s_button_trigger_on.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1268,6 +1268,14 @@
                 "id": "da71c400-7f10-4bb3-9b08-ca068db6eeea",
                 "resourcePath": "sprites\\s_robot_roll_G\\s_robot_roll_G.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4fadca6-c05c-41e8-9a0c-e3f99ccb5cce",
+            "Value": {
+                "id": "7bd4f221-e8be-4050-8fee-602d78b79e7f",
+                "resourcePath": "objects\\o_button_trigger\\o_button_trigger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1291,14 +1299,6 @@
             "Value": {
                 "id": "fabd102b-48fd-496f-a38b-4a12b74bec43",
                 "resourcePath": "sprites\\s_enemy_fly_D\\s_enemy_fly_D.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "da3e5fd8-5388-4acc-ac76-6effbd36de7b",
-            "Value": {
-                "id": "b37b34db-405b-4e3e-8293-91f6088b9039",
-                "resourcePath": "sprites\\trigger_on\\trigger_on.yy",
                 "resourceType": "GMSprite"
             }
         },
