@@ -12,7 +12,7 @@ vsp = vsp + grv;
 
 
 //Horizontal collision
-if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+if (place_meeting(x+hsp,y,o_wall))		//|| place_meeting(x+hsp,y,o_player) || place_meeting(x+hsp,y,o_enemy)			//Is there a colision where we will be next frame after one more hsp? If so do this?
 {
 	while (!place_meeting(x+sign(hsp),y,o_wall))				//If a collision is not detected in the direction of movement do this
 	{
