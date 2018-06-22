@@ -7,22 +7,22 @@ switch (mpos)
 	}
 	case 1:
 	{
-		room_goto(5);
+		room_goto(4);
 		break;
 	}
 	case 2:
 	{
-		room_goto(6);
+		room_goto(5);
 		break;
 	}
 	case 3:
 	{
-		room_goto(7);
+		room_goto(6);
 		break;
 	}
 	case 4:
 	{
-		room_goto(8);
+		room_goto(7);
 		break;
 	}
 	case 5:
