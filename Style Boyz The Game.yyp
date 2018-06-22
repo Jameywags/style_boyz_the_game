@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "1673ff98-477a-489c-984c-97f9affe5527",
+            "Value": {
+                "id": "3ddec86c-3c97-4996-8428-7e674b4a5506",
+                "resourcePath": "rooms\\Test_enemies\\Test_enemies.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "16ca1c1a-bf43-4912-a715-d43bb01d0960",
             "Value": {
                 "id": "2b7b707c-e1c8-4537-b1f0-dd610f4109df",
@@ -508,14 +516,6 @@
                 "id": "af796e6e-3832-4c4e-9daf-cc851c4a18d7",
                 "resourcePath": "scripts\\scr_robot_roll\\scr_robot_roll.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "412843e8-abaf-4727-826a-126126154e18",
-            "Value": {
-                "id": "a43418b3-a64e-46e7-8d04-afa4548abd3a",
-                "resourcePath": "rooms\\Test_enemies\\Test_enemies.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
