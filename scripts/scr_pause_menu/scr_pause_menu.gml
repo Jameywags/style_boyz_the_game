@@ -10,6 +10,7 @@ switch (mpos)
 	{
 		global.pause = 0;
 		with (o_pause)
+		audio_stop_all()
 		room_goto(0);
 		break;
 	}
@@ -17,6 +18,7 @@ switch (mpos)
 	{
 		room_goto_previous()
 		room_restart()
+		audio_stop_all()
 		global.pause = 0;
 		break;
 	}

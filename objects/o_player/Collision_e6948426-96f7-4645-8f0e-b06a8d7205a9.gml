@@ -13,6 +13,7 @@ if (hp == 0) {
 	hsp = lengthdir_x(6, direction);
 	vsp = lengthdir_y(4, direction)-2;
 	if (sign(hsp) != 0) image_xscale = sign(hsp);
+	o_music.dead = true
 	
 	//instance_create_layer(0,0,"extra",o_game_over);
 	//return;
