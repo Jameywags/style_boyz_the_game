@@ -16,18 +16,21 @@
 
 if (o_player.boy = o_player.JAMEY_ID)
 {
-	audio_sound_gain(mus_first_try, 0, 10);
+	audio_sound_gain(mus_first_try_base, 0, 10);
+	audio_sound_gain(mus_first_try_harm, 0, 10);
 	audio_sound_gain(mus_first_try_beat, 1, 10);
 }
 
 if (o_player.boy = o_player.LUKE_ID)
 {
 	audio_sound_gain(mus_first_try_beat, 0, 10);
-	audio_sound_gain(mus_first_try, 1, 10);
+	audio_sound_gain(mus_first_try_base, 0, 10);
+	audio_sound_gain(mus_first_try_harm, 1, 10);
 }
 
 if (o_player.boy = o_player.HIMAT_ID)
 {
 	audio_sound_gain(mus_first_try_beat, 0, 10);
-	audio_sound_gain(mus_first_try, 1, 10);
+	audio_sound_gain(mus_first_try_harm, 0, 10);
+	audio_sound_gain(mus_first_try_base, 1, 10);
 }

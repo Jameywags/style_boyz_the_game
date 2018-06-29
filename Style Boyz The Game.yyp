@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "19afa1df-3b2d-44a3-93e4-ff02cf6fbc6e",
+            "Value": {
+                "id": "d870bc21-ffac-4549-9f93-546fa74a9076",
+                "resourcePath": "sounds\\mus_first_try_harm\\mus_first_try_harm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1ac237d4-9abb-448e-95c6-597d506112c2",
             "Value": {
                 "id": "1286545a-db8b-4c69-8376-2e87faefa342",
@@ -759,6 +767,14 @@
             }
         },
         {
+            "Key": "6b91fe79-d884-4f14-aaa0-8b81f832d795",
+            "Value": {
+                "id": "2dd5fe7c-5906-468f-8b07-81f82e25c0fb",
+                "resourcePath": "sounds\\sound10\\sound10.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "70a54df3-f90e-4be6-95b0-e53012ad279e",
             "Value": {
                 "id": "66fdd44f-00a1-4522-a707-e427ff31fa64",
@@ -844,14 +860,6 @@
                 "id": "ab415f18-a365-4051-9e00-1e1a7b2f8ded",
                 "resourcePath": "scripts\\scr_robot_explode\\scr_robot_explode.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "85a6b494-4e67-4879-92b4-a4b24a04a273",
-            "Value": {
-                "id": "a7cf5c0e-f5ee-4889-9b42-a098e6c33e93",
-                "resourcePath": "sounds\\mus_first_try\\mus_first_try.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -1420,6 +1428,14 @@
                 "id": "42b969f5-0332-4e10-8eea-fb80eb1f9808",
                 "resourcePath": "views\\e1a08e67-4dfc-4f7f-84eb-4dbaa6f7b4ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e3e19e4c-b972-4777-817c-044425163fac",
+            "Value": {
+                "id": "7d2dd5d8-73b7-4c86-9d8e-7aa55751c88d",
+                "resourcePath": "sounds\\mus_first_try_base\\mus_first_try_base.yy",
+                "resourceType": "GMSound"
             }
         },
         {
