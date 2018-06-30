@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "3752d642-1575-4a85-9a30-95828037c5a1",
+            "Value": {
+                "id": "9f4b1ceb-dafc-48d8-8d85-8c98dedf86b3",
+                "resourcePath": "sounds\\snd_powerup\\snd_powerup.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3808796b-ed18-4cbb-94bf-dd3d5f522d3a",
             "Value": {
                 "id": "19ffe6d0-a4c1-4124-b6d6-6add2d036695",
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "7e119381-2aed-40b7-b832-ad61437db131",
+            "Value": {
+                "id": "777bda3f-ca8e-439e-bf46-d2b1572c6fdf",
+                "resourcePath": "objects\\o_particle_powerup\\o_particle_powerup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7e746052-5cd6-4316-905d-473cea97ded2",
             "Value": {
                 "id": "3d6da65a-6988-4b32-b32e-55129f2e5034",
@@ -916,6 +932,14 @@
                 "id": "2b32e91d-928e-4147-ba49-5b7a7281ae3f",
                 "resourcePath": "objects\\o_text_bubble\\o_text_bubble.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91a00395-b193-4b4d-b5b5-1ec5143fac1e",
+            "Value": {
+                "id": "455bdead-cd84-40f1-9c11-0b1524efe464",
+                "resourcePath": "sounds\\snd_powerdown\\snd_powerdown.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1188,6 +1212,14 @@
                 "id": "b13d7660-ccb4-4d30-937d-21d5900ae254",
                 "resourcePath": "scripts\\scr_collideandmove\\scr_collideandmove.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c0ac4f09-33e2-4610-af33-5a1a5bbeab41",
+            "Value": {
+                "id": "370d6d7a-f03d-44ce-940e-05fb837bd869",
+                "resourcePath": "objects\\o_particle_powerdown\\o_particle_powerdown.yy",
+                "resourceType": "GMObject"
             }
         },
         {

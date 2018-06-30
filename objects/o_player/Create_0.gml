@@ -36,7 +36,7 @@ move_speed = 0.25;	//initial move speed
 hsp_decel = 0.35;	//horizontal deceleration constant
 
 jump_speed_normal = 10		//Jump speed
-jump_speed_powerup = 12		//Jump speed powerup
+jump_speed_powerup = 13		//Jump speed powerup
 jump_speed_powerdown = 6	//Jump speed powerdown
 jump_speed = jump_speed_normal
 jumps = 0			//number of jumps available
