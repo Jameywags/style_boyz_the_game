@@ -1,2 +1,5 @@
 jump_speed = jump_speed_normal;
-//sprite_index = s_player			//Normal player sprite
+instance_destroy(o_particle_powerup)
+instance_destroy(o_particle_powerdown)
+audio_stop_sound(snd_powerup)
+audio_stop_sound(snd_powerdown)
