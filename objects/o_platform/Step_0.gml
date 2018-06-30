@@ -9,3 +9,42 @@ if (instance_exists(o_player))
 		mask_index = s_platform;			//Sprite, with collision.
 	}
 }
+
+if (move = true)
+{
+	//Vertical Movement
+	if (y > y_top) && (vsp < 0)		//Lower then top limit, moving up -> keep moving up
+	{
+		y = y + vsp;
+	}
+	if (y <= y_top) && (vsp < 0)	//At top limit, moving up -> start moving down
+	{
+		vsp = -vsp;
+	}
+	if (y < y_bot) && (vsp > 0)		//Higher then bottom limit, moving down -> keep moving down
+	{
+		y = y + vsp;
+	}
+	if (y >= y_bot) && (vsp > 0)	//At bottom limit, moving down -> start moving up
+	{
+		vsp = -vsp;
+	}
+	
+	//Horizontal Movement
+	if (x > x_left) && (hsp < 0)		//Lower then top limit, moving up -> keep moving up
+	{
+		x = x + hsp;
+	}
+	if (x <= x_left) && (hsp < 0)	//At top limit, moving up -> start moving down
+	{
+		hsp = -hsp;
+	}
+	if (x < x_right) && (hsp > 0)		//Higher then bottom limit, moving down -> keep moving down
+	{
+		x = x + hsp;
+	}
+	if (x >= x_right) && (hsp > 0)	//At bottom limit, moving down -> start moving up
+	{
+		hsp = -hsp;
+	}
+}
