@@ -1287,6 +1287,14 @@
             }
         },
         {
+            "Key": "cd23b684-2751-46a9-9244-01047565a7a6",
+            "Value": {
+                "id": "7fed91e7-2e9e-47bd-8c72-2db10bcfb71a",
+                "resourcePath": "objects\\o_particle_firework\\o_particle_firework.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cd578181-4e67-4658-a354-2aa9d2f35b2f",
             "Value": {
                 "id": "4f9c1929-4b55-439a-a16b-00328c63fa36",
