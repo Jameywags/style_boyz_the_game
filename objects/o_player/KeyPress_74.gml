@@ -1,7 +1,7 @@
 /// @description Switch to Jamey
 if (boy != JAMEY_ID)
 {
-	instance_create_depth(x, y, 1, o_boy_change)
+	instance_create_depth(x, y, 0, o_boy_change)
 	o_boy_change.sprite_index = s_boy_change_Jamey
 }
 boy = JAMEY_ID;

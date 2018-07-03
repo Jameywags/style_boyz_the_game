@@ -1,7 +1,7 @@
 /// @description Switch to Himat
 if (boy != HIMAT_ID)
 {
-	instance_create_depth(x, y, 1, o_boy_change)
+	instance_create_depth(x, y, 0, o_boy_change)
 	o_boy_change.sprite_index = s_boy_change_Himat
 }
 boy = HIMAT_ID;

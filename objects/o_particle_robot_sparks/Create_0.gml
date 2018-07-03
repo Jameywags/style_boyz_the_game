@@ -1,4 +1,4 @@
-spark = 0
+spark = 0;
 
 //Particle System
 part_fairy_dust_sys = part_system_create();

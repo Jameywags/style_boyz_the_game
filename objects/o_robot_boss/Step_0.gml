@@ -8,5 +8,6 @@ switch (state)
 	case states.yellow: scr_robot_yellow(); break;
 	case states.yellow_to_red: scr_robot_yellow_to_red(); break;
 	case states.red: scr_robot_red(); break;
+	case states.red_to_explode: scr_robot_red_to_explode(); break;
 	case states.explode: scr_robot_explode(); break;
 }
