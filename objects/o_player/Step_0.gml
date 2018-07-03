@@ -3,7 +3,67 @@ if (global.pause) exit;
 //===== similar code for all 3 ================================
 
 // Check for "go night night" mode
+if (hp == 0 && done == 0) { 
+	vsp = vsp + grv;												//Vertical speed affected by gravity
+	
+	hsp = hsp/1.1;
+	if(abs(hsp) < 0.001) {
+		hsp = 0;
+		image_index = 1;										//Set sprite to image 1
+		alarm[1] = 1;
+		exit;
+	}
+	//Horizontal collision
+	if (place_meeting(x+hsp,y,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+	{
+		while (!place_meeting(x+sign(hsp),y,o_wall))				//If a collision is not detected in the direction of movement do this
+		{
+			x = x + sign(hsp);										//Move one pixel in the direction we are moving
+		}
+		hsp = 0;													//Set hsp to 0
+	}
 
+	x = x + hsp;													//Every frame you move right or left the amount walksp is.
+
+	//Vertical collision
+	if (place_meeting(x,y+vsp,o_wall))								//Is there a colision where we will be next frame after one more hsp? If so do this?
+	{	
+		if (vsp > 0)												//If vsp is greater then 0, falling
+		{
+											//Set done variable to 1, this will stop looping code
+			image_index = 1;										//Set sprite to image 1
+			alarm[1] = 60;
+		}
+		while (!place_meeting(x,y+sign(vsp),o_wall))				//If a collision is not detected in the direction of movement do this
+		{
+			y = y + sign(vsp);										//Move one pixel in the direction we are moving
+		}
+		vsp = 0;													//Set hsp to 0
+	}
+
+	y = y + vsp;
+	exit;
+}
+
+if (hp == 0) {
+	direction = point_direction(0,0, -hsp, -vsp);
+	hsp = lengthdir_x(6, direction);
+	vsp = lengthdir_y(4, direction)-2;
+	if (sign(hsp) != 0) image_xscale = sign(hsp);
+	
+	//instance_create_layer(0,0,"extra",o_game_over);
+	grv = 0.2;			//Gravity
+	done = 0;			//Variable used to end code
+
+	image_speed = 0;	//Sprite image speed
+	image_index = 0;
+
+	screen_shake(6,60);
+	audio_play_sound(snd_enemy_dead,10,false);
+	game_set_speed(30,gamespeed_fps);
+	with (o_camera) follow = other.id;
+	exit;
+}
 
 //Get player input
 if (has_control)

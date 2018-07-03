@@ -63,3 +63,5 @@ fall_damage = 0;	//Initial value
 pause_id = -1;		//Initial value
 
 has_control = true;
+
+done = 1;

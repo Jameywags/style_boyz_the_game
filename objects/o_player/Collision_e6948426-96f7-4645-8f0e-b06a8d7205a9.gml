@@ -7,14 +7,3 @@ if (hit_delay = 0)			//If hit delay is at 0
 	audio_play_sound(snd_player_hit, 0, 0);
 }
 
-if (hp == 0) {
-	instance_change(o_player_D, true);
-	direction = point_direction(other.x, other.y, x, y);
-	hsp = lengthdir_x(6, direction);
-	vsp = lengthdir_y(4, direction)-2;
-	if (sign(hsp) != 0) image_xscale = sign(hsp);
-	o_music.dead = true
-	
-	//instance_create_layer(0,0,"extra",o_game_over);
-	//return;
-}
