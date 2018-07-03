@@ -15,3 +15,8 @@ if (state = states.yellow_to_red)
 	hsp = 2.7;
 	state = states.red;
 }
+
+if (state = states.red_to_explode)
+{
+	state = states.explode;
+}
