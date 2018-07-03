@@ -41,8 +41,8 @@ jump_speed_powerdown = 6	//Jump speed powerdown
 jump_speed = jump_speed_normal
 jumps = 0			//number of jumps available
 jumps_max = 1		//number of jumps allowed max
-wall_jump_vsp = 7	//Speed given vertically by wall jump
-wall_jump_hsp = 7	//Speed given horizontally by wall jump
+wall_jump_vsp = 0.7;	//Speed given vertically by wall jump
+wall_jump_hsp = 0.7;	//Speed given horizontally by wall jump
 wall_slide_vsp =2	//Vertical speed when wall sliding
 
 // FIGHTING 
