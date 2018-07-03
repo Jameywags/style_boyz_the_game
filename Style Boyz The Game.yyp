@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "952f936b-68b5-4da4-9a78-f3dbfe79e6f5",
+            "Value": {
+                "id": "ae6a15f3-5e2f-49c4-b267-03200c945089",
+                "resourcePath": "rooms\\first_level\\first_level.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "977bc433-3912-4def-be1e-42362960543b",
             "Value": {
                 "id": "f191ddc3-da55-468c-93b9-16ee3281153d",
@@ -1564,6 +1572,14 @@
                 "id": "42b969f5-0332-4e10-8eea-fb80eb1f9808",
                 "resourcePath": "views\\e1a08e67-4dfc-4f7f-84eb-4dbaa6f7b4ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e3ae1486-354f-4dc1-a5f4-515e27a63398",
+            "Value": {
+                "id": "1d7132c7-f6c2-487f-b4d4-7cd37aa20cd3",
+                "resourcePath": "sounds\\snd_mini_robot_drop\\snd_mini_robot_drop.yy",
+                "resourceType": "GMSound"
             }
         },
         {

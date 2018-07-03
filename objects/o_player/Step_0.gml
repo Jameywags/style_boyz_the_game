@@ -59,6 +59,7 @@ if (hp == 0) {
 	image_index = 0;
 
 	screen_shake(6,60);
+	audio_stop_all();
 	audio_play_sound(snd_enemy_dead,10,false);
 	game_set_speed(30,gamespeed_fps);
 	with (o_camera) follow = other.id;
@@ -251,8 +252,8 @@ if (wall_jump)																	//Variable to give wall jump ability
 	    if (key_jump) && (!touch_wall_down)		//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
-	        vsp -= wall_jump_vsp;												//Up speed
-	        hsp -= wall_jump_hsp;												//Speed away from way
+	        vsp -= wall_jump_vsp * .9 * jump_speed;												//Up speed
+	        hsp -= wall_jump_hsp * .9 * jump_speed;												//Speed away from way
 	    }
 	}
 
@@ -262,8 +263,8 @@ if (wall_jump)																	//Variable to give wall jump ability
 	    if (key_jump && !touch_wall_down)		//If press jump and not on ground
 	    {
 			vsp = 0;															//Initially set vsp to 0
-	        vsp -= wall_jump_vsp;												//Up speed
-	        hsp += wall_jump_hsp;												//Speed away from way
+	        vsp -= wall_jump_vsp * jump_speed;												//Up speed
+	        hsp += wall_jump_hsp * jump_speed;												//Speed away from way
 	    }
 	}
 //Wall Slides Left
