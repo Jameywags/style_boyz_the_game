@@ -1,6 +1,6 @@
 var move = 0;
-move -= keyboard_check_pressed(vk_up);
-move += keyboard_check_pressed(vk_down);
+move -= keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
+move += keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"));
 
 if (move != 0)
 {

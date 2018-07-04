@@ -1,4 +1,5 @@
 instance_create_depth(x, y, 0, o_explosion);
+instance_create_depth(0,0,0, o_particle_firework);
 
 audio_play_sound(mus_ode_to_joy,0,0);
 
