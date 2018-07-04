@@ -178,7 +178,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "100",
             "varName": "max_hp",
             "varType": 0
         },
@@ -192,7 +192,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "3",
+            "value": "100",
             "varName": "hp",
             "varType": 0
         },
